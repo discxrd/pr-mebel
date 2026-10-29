@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  *:focus {
+    outline: none
+  }
+}
+
+html {
+  overscroll-behavior: unset;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
+.font-card--title {
+  /* font-family: var(--font-family); */
+  font-weight: 700;
+  /* font-size: 24px; */
+  text-transform: uppercase;
+}
+
+.font-card--text {
+  /* font-family: var(--font-family); */
+  font-weight: 400;
+  /* font-size: 24px; */
+}
+
+.quiz {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+}
+
+/* Hide Marquiz widget ONLY when any modal dialog or radix portal is currently OPEN */
+body:has([role="dialog"][data-state="open"]) [id*="marquiz"],
+body:has([role="dialog"][data-state="open"]) [class*="marquiz"],
+body:has([role="dialog"][data-state="open"]) iframe[src*="marquiz"],
+body:has([data-radix-portal] [data-state="open"]) [id*="marquiz"],
+body:has([data-radix-portal] [data-state="open"]) [class*="marquiz"],
+body:has([data-radix-portal] [data-state="open"]) iframe[src*="marquiz"] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}

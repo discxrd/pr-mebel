@@ -1,0 +1,469 @@
+.section {
+  width: 100%;
+  overflow: hidden;
+  scroll-margin-top: 3.75vw;
+}
+
+.sectionWrapper {
+  padding: 3.125vw 17.578125vw;
+  width: 100%;
+  margin: 0 auto;
+  --card-width: 25vw;
+  --card-gap: 2vw;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 1.328125vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 1.5vw;
+}
+
+/* --- Настройки слайдера --- */
+.sliderContainer {
+  width: 100%;
+  overflow: visible;
+}
+
+.sliderTrack {
+  display: flex;
+  gap: var(--card-gap);
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.slideItem {
+  flex: 0 0 var(--card-width);
+  height: 24vw;
+}
+
+/* --- Текстовая карточка --- */
+.textCard {
+  background-color: #FAFAFA;
+  padding: 2vw 1.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2vw;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+}
+
+.avatar {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.initialsAvatar {
+  background-color: #2F2F2F;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 0.9vw;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.userName {
+  font-weight: 400;
+  font-size: 1vw;
+  color: #2F2F2F;
+  margin-bottom: 0.2vw;
+}
+
+.userDate {
+  font-weight: 300;
+  font-size: 0.8vw;
+  color: #989898;
+}
+
+.stars {
+  display: flex;
+  gap: 0.25vw;
+  margin-top: 0.4vw;
+}
+
+.stars svg {
+  width: 0.8vw;
+  height: 0.8vw;
+}
+
+.cardTitle {
+  font-weight: 400;
+  font-size: 1.041667vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 0.8vw;
+}
+
+.cardText {
+  font-weight: 400;
+  font-size: 0.833333vw;
+  line-height: 135%;
+  letter-spacing: 0%;
+  overflow: hidden;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  flex: 1;
+  min-height: 0;
+  padding-right: 0.5vw;
+  transition: all 0.4s ease;
+}
+
+.initialText {
+  margin: 0;
+  white-space: pre-line;
+}
+
+.desktopText {
+  display: inline;
+}
+
+.mobileText {
+  display: none;
+}
+
+.cardTextExpanded {
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-color: #ccc #f1f1f1;
+}
+
+.cardText::-webkit-scrollbar {
+  width: 0.25vw;
+}
+
+.cardText::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0.1vw;
+}
+
+.cardText::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0.1vw;
+}
+
+.cardTextExpanded::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.cardTextExpanded::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+.cardTextExpanded::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.readMoreBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 0.8vw;
+  font-weight: 500;
+  font-size: 0.85vw;
+  color: #989898;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.15625vw;
+  text-align: left;
+  align-self: flex-start;
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.readMoreBtn:hover {
+  color: #2F2F2F;
+}
+
+/* --- Медиа карточка --- */
+.mediaCard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../../public/reviews/video-perview.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.15625vw;
+}
+
+.playButton {
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.15625vw);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.playButton:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.playButton svg {
+  margin-left: 0.15625vw;
+}
+
+/* --- Управление (Кнопки) --- */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375vw;
+  margin-top: 1.5625vw;
+}
+
+.navBtn {
+  width: 1.25vw;
+  height: 1.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2F2F2F;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navBtn:hover {
+  border-color: #2F2F2F;
+}
+
+.pagination {
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgba(31, 30, 26, 1);
+}
+
+/* --- Модальное окно отзывов --- */
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.15625vw);
+}
+
+/* --- Управление (Кнопки) --- */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375vw;
+  margin-top: 1.5625vw;
+}
+
+.navBtn {
+  width: 1.25vw;
+  height: 1.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2F2F2F;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navBtn:hover {
+  border-color: #2F2F2F;
+}
+
+.pagination {
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgba(31, 30, 26, 1);
+}
+
+/* --- Модальное окно отзывов --- */
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.15625vw);
+  position: fixed;
+  inset: 0;
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+}
+
+.modalContent {
+  background-color: #FAFAFA;
+  width: 27.734375vw;
+  height: 17.578125vw;
+  max-width: 90vw;
+  padding: 1.6015625vw 1.5625vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.390625vw 0.9765625vw rgba(0, 0, 0, 0.2);
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  color: #2F2F2F;
+  z-index: 101;
+  border-radius: 0.15625vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalClose {
+  position: absolute;
+  top: 0.78125vw;
+  right: 0.78125vw;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.1953125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.modalClose:hover {
+  opacity: 0.7;
+}
+
+.modalBody {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.9375vw;
+}
+
+.modalUserInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.46875vw;
+}
+
+.modalAvatar {
+  width: 1.875vw;
+  height: 1.875vw;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.modalUserName {
+  font-weight: 400;
+  font-size: 0.625vw;
+  color: #2F2F2F;
+  margin-bottom: 0.15625vw;
+}
+
+.modalUserDate {
+  font-weight: 300;
+  font-size: 0.5078125vw;
+  color: #989898;
+}
+
+.modalStars {
+  display: flex;
+  gap: 0.15625vw;
+  margin-top: 0.3125vw;
+}
+
+.modalTitle {
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 0.625vw;
+}
+
+.modalScrollArea {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.3125vw;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f1f1f1;
+  min-height: 0;
+}
+
+/* Custom scrollbar for premium look */
+.modalScrollArea::-webkit-scrollbar {
+  width: 0.15625vw;
+}
+
+.modalScrollArea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.078125vw;
+}
+
+.modalScrollArea::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 0.078125vw;
+}
+
+.modalScrollArea::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.modalText {
+  font-weight: 400;
+  font-size: 0.546875vw;
+  line-height: 140%;
+  color: #2F2F2F;
+  white-space: pre-line;
+  margin: 0;
+}
+
+/* Анимации Radix */
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

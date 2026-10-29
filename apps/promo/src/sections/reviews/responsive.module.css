@@ -1,0 +1,407 @@
+/* Breakpoints / Responsive styles for Reviews section */
+
+@media screen and (max-width: 1920px) {
+  .section {
+    scroll-margin-top: 5vw;
+  }
+
+  .sectionWrapper {
+    padding: 3.125vw 12.5vw 2.604167vw !important;
+    --card-width: 32vw;
+    --card-gap: 2.5vw;
+  }
+
+  .heading {
+    font-size: 1.5625vw !important;
+    margin-bottom: 1.666667vw;
+  }
+
+  .slideItem {
+    height: 28vw;
+  }
+
+  .textCard {
+    padding: 2.135417vw 1.5vw;
+  }
+
+  .cardHeader {
+    margin-bottom: 1.5625vw;
+  }
+
+  .userInfo {
+    gap: 0.8vw;
+  }
+
+  .avatar {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .initialsAvatar {
+    font-size: 1vw !important;
+  }
+
+  .userName {
+    font-size: 1.1vw !important;
+    margin-bottom: 0.208333vw;
+  }
+
+  .userDate {
+    font-size: 0.9vw !important;
+  }
+
+  .stars {
+    gap: 0.3vw;
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+  }
+
+  .stars svg {
+    width: 0.9vw;
+    height: 0.9vw;
+  }
+
+  .cardTitle {
+    font-size: 1.041667vw !important;
+    margin-bottom: 0.833333vw;
+  }
+
+  .cardText {
+    font-size: 0.833333vw !important;
+  }
+
+  .readMoreBtn {
+    font-size: 0.95vw !important;
+    margin-top: 0.833333vw !important;
+  }
+
+  .controls {
+    gap: 1.25vw;
+    margin-top: 1.5625vw;
+  }
+
+  .navBtn {
+    width: 1.666667vw;
+    height: 1.666667vw;
+  }
+
+  .pagination {
+    font-size: 1.041667vw;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .sectionWrapper {
+    padding: 50px !important;
+    --card-width: 480px;
+    --card-gap: 36px;
+  }
+
+  .avatar {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .initialsAvatar {
+    font-size: 18px !important;
+  }
+
+  .textCard {
+    background-color: #FAFAFA;
+    padding: 41px 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slideItem {
+    flex: 0 0 var(--card-width);
+    height: 480px;
+  }
+
+  .heading {
+    font-size: 24px !important;
+  }
+
+  .userName {
+    font-size: 18px !important;
+  }
+
+  .userDate {
+    font-size: 15px !important;
+  }
+
+  .cardTitle {
+    font-size: 22px !important;
+  }
+
+  .cardText {
+    font-size: 15px !important;
+  }
+
+  .readMoreBtn {
+    font-size: 15px !important;
+    margin-top: 14px !important;
+  }
+
+  .controls {
+    gap: 24px !important;
+    margin-top: 30px !important;
+  }
+
+  .navBtn {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .pagination {
+    font-size: 20px !important;
+  }
+
+  .playButton {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .playButton svg {
+    margin-left: 4px !important;
+  }
+
+  .stars {
+    gap: 4px !important;
+    margin-right: 58px !important;
+    margin-top: 23px !important;
+  }
+
+  .stars svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .modalContent {
+    width: 710px !important;
+    height: 450px !important;
+    padding: 41px 40px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px !important;
+  }
+
+  .modalClose {
+    top: 20px !important;
+    right: 20px !important;
+    padding: 5px !important;
+  }
+
+  .modalHeader {
+    margin-bottom: 24px !important;
+  }
+
+  .modalUserInfo {
+    gap: 12px !important;
+  }
+
+  .modalAvatar {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .modalUserName {
+    font-size: 16px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .modalUserDate {
+    font-size: 13px !important;
+  }
+
+  .modalStars {
+    gap: 4px !important;
+    margin-top: 8px !important;
+  }
+
+  .userInfo {
+    gap: 10px;
+  }
+
+  .modalTitle {
+    font-size: 20px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .modalScrollArea {
+    padding-right: 8px !important;
+  }
+
+  .modalScrollArea::-webkit-scrollbar {
+    width: 4px !important;
+  }
+
+  .modalScrollArea::-webkit-scrollbar-track {
+    border-radius: 2px !important;
+  }
+
+  .modalScrollArea::-webkit-scrollbar-thumb {
+    border-radius: 2px !important;
+  }
+
+  .modalText {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionWrapper {
+    padding: 40px 0 !important;
+    --card-width: 320px !important;
+    --card-gap: 16px !important;
+  }
+
+  .heading {
+    font-size: 20px !important;
+    padding-left: 40px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .sliderContainer {
+    padding-left: 40px !important;
+  }
+
+  .slideItem {
+    height: 400px !important;
+  }
+
+  .textCard {
+    padding: 24px 16px !important;
+  }
+
+  .cardHeader {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+  }
+
+  .stars {
+    margin: 0 !important;
+    align-self: center !important;
+    gap: 2px !important;
+  }
+
+  .stars svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .cardTitle {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .readMoreBtn {
+    display: none !important;
+  }
+
+  .desktopText {
+    display: none !important;
+  }
+
+  .mobileText {
+    display: inline !important;
+  }
+
+  .cardText {
+    font-size: 16px !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: thin !important;
+  }
+
+  .userName {
+    font-size: 18px !important;
+  }
+
+  .userDate {
+    font-size: 16px !important;
+  }
+
+  .controls {
+    margin-top: 24px !important;
+  }
+
+  .pagination {
+    font-size: 16px !important;
+  }
+
+  .modalContent {
+    width: calc(100vw - 32px) !important;
+    height: auto !important;
+    max-height: 85vh !important;
+    padding: 24px 16px !important;
+  }
+
+  .modalClose {
+    top: 12px !important;
+    right: 12px !important;
+  }
+
+  .modalHeader {
+    margin-bottom: 16px !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .modalStars {
+    margin-top: 0 !important;
+    gap: 2px !important;
+  }
+
+  .modalStars svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .modalTitle {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .modalText {
+    font-size: 16px !important;
+    line-height: 130% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sectionWrapper {
+    --card-width: 320px !important;
+    --card-gap: 12px !important;
+  }
+
+  .heading {
+    /* font-size: 18px !important; */
+    padding-left: 10px !important;
+  }
+
+  .sliderContainer {
+    padding-left: 10px !important;
+  }
+
+  .cardTitle {
+    /* font-size: 20px !important; */
+  }
+
+  .cardText {
+    /* font-size: 14px !important; */
+  }
+
+  .userName {
+    /* font-size: 16px !important; */
+  }
+
+  .userDate {
+    /* font-size: 14px !important; */
+  }
+}

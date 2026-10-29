@@ -1,0 +1,267 @@
+.contactsRoot {
+  width: 100%;
+  background-color: #f7f7f7;
+  scroll-margin-top: 5vw;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.125vw 12.5vw;
+  box-sizing: border-box;
+}
+
+.titleContact {
+  font-weight: 400;
+  font-size: 1.5625vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgba(31, 30, 26, 1);
+  margin-bottom: 1.5625vw;
+}
+
+.contactsListWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.041667vw;
+  width: 100%;
+  margin-bottom: 1.5625vw;
+}
+
+.contactCard {
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.02);
+  box-sizing: border-box;
+  padding: 0;
+  align-items: center;
+}
+
+.bannerCard {
+  background: linear-gradient(135deg, #1f1e1a 0%, #2b2a24 100%);
+  padding: 0.520833vw 1.041667vw;
+}
+
+.salonCard,
+.officeCard {
+  padding: 1.041667vw;
+}
+
+.cardLeft {
+  flex: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.bannerLeft {
+  justify-content: center;
+  padding: 0;
+}
+
+.bannerLeft h3 {
+  font-weight: 400;
+  font-size: 1.041667vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 0.520833vw 0;
+}
+
+.bannerLeft p {
+  font-weight: 400;
+  font-size: 0.833333vw;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.redText {
+  color: #E30613;
+}
+
+.btnWrapper {
+  display: inline-block;
+}
+
+.btnContact {
+  padding: 0.625vw 1.875vw;
+  background-color: #E30613;
+  font-weight: 400;
+  font-size: 0.729167vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnContact:hover {
+  background-color: #c40510;
+}
+
+.cardRight {
+  width: 35.989583vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.salonCard .cardRight {
+  height: 11vw;
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.salonCard .cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cardColorRed {
+  background: linear-gradient(135deg, #E30613 0%, #b8050f 100%);
+}
+
+.cardColorDark {
+  background: linear-gradient(135deg, #1f1e1a 0%, #2b2a24 100%);
+}
+
+.cardTitle {
+  font-weight: 400;
+  font-size: 1.041667vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #1f1e1a;
+  margin: 0 0 1.041667vw 0;
+}
+
+.cardDetailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.083333vw;
+  width: 100%;
+}
+
+.cardDetailsGridOffice {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: column;
+  gap: 0.78125vw 2.083333vw;
+  width: 100%;
+}
+
+.order1 { order: 1; }
+.order2 { order: 2; }
+.order3 { order: 3; }
+.order4 { order: 4; }
+.order5 { order: 5; }
+.order6 { order: 6; }
+.order7 { order: 7; }
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.208333vw;
+}
+
+.detailLabel {
+  font-weight: 400;
+  font-size: 0.729167vw;
+  line-height: 120%;
+  color: rgba(31, 30, 26, 0.45);
+}
+
+.detailValue,
+.detailValueLink {
+  font-weight: 500;
+  font-size: 0.833333vw;
+  line-height: 130%;
+  color: #1f1e1a;
+  text-decoration: none;
+}
+
+.metroBlock {
+  display: block;
+  margin-top: 0.4vw;
+}
+
+.detailValueLink:hover {
+  color: #E30613;
+  text-decoration: underline;
+}
+
+.mapWrapper {
+  width: 100%;
+  height: 20.833333vw;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.02);
+  position: relative;
+}
+
+.mapWrapper > * {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mapFallback {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a3a3a3;
+}
+
+.mapFallbackPulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.desktopImage {
+  display: block;
+}
+
+.mobileImage {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktopImage {
+    display: none !important;
+  }
+  .mobileImage {
+    display: block !important;
+  }
+}

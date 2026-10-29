@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${APP_IMAGE:-pr-mebel:test}
+    container_name: ${CONTAINER_NAME:-pr-mebel-local}
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${CONTAINER_NAME:-pr-mebel-local}.rule=Host(${DOMAINS_RULE:-`localhost`})"
+      - "traefik.http.routers.${CONTAINER_NAME:-pr-mebel-local}.entrypoints=websecure"
+      - "traefik.http.routers.${CONTAINER_NAME:-pr-mebel-local}.tls=true"
+      - "traefik.http.routers.${CONTAINER_NAME:-pr-mebel-local}.tls.certresolver=letsencrypt"
+      - "traefik.http.services.${CONTAINER_NAME:-pr-mebel-local}.loadbalancer.server.port=3000"
+    networks:
+      - web-net
+
+networks:
+  web-net:
+    external: true

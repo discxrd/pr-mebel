@@ -1,0 +1,206 @@
+/* Breakpoints / Responsive styles for OrganizationProcess section */
+
+@media screen and (max-width: 1920px) {
+  .section {
+    padding: 3.125vw 12.5vw !important;
+  }
+
+  .section h2 {
+    font-size: 1.5625vw !important;
+    margin-bottom: 1.197917vw;
+  }
+
+  .processBlock {
+    gap: 2.083333vw;
+  }
+
+  .accordion {
+    padding-left: 1.041667vw;
+    gap: 0.208333vw;
+  }
+
+  .accordionItem {
+    border-bottom: 0.052083vw solid #E5E5E5;
+  }
+
+  .accordionItem.active {
+    border-bottom: 0.052083vw solid rgba(31, 30, 26, 0.5);
+  }
+
+  .accordionHeader {
+    padding: 0.46875vw 0;
+    gap: 0.833333vw;
+  }
+
+  .titleWrapper {
+    gap: 0.208333vw;
+  }
+
+  .icon {
+    width: 2.083333vw !important;
+    height: 2.083333vw !important;
+  }
+
+  .number {
+    font-size: 1.041667vw !important;
+  }
+
+  .title {
+    font-size: 1.041667vw !important;
+  }
+
+  .accordionItem.active .accordionContent {
+    padding-bottom: 0.729167vw;
+    max-height: 10.416667vw;
+  }
+
+  .accordionContent p {
+    padding-left: 1.875vw;
+    font-size: 0.729167vw !important;
+  }
+
+  .rightSide img {
+    border-radius: 0.208333vw;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .section {
+    padding: 50px !important;
+  }
+
+  .section h2 {
+    font-size: 24px !important;
+  }
+
+  .title,
+  .number {
+    font-size: 18px !important;
+  }
+
+  .accordionContent p {
+    font-size: 14px !important;
+  }
+
+  .icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+
+
+  .leftSide {
+    max-width: 100% !important;
+  }
+
+  .leftSide,
+  .rightSide {
+    width: 100% !important;
+  }
+
+  .accordionItem.active .accordionContent {
+    max-height: 1000px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 40px !important;
+  }
+
+  .section h2 {
+    font-size: 20px !important;
+    margin-bottom: 30px !important;
+  }
+
+  /* .section h2 br {
+    display: none !important;
+  } */
+
+  .processBlock {
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .title,
+  .number {
+    font-size: 18px !important;
+  }
+
+  .accordionContent p {
+    font-size: 16px !important;
+    padding-left: 0 !important;
+  }
+
+  .icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .accordionHeader {
+    padding: 8px 0 !important;
+  }
+
+  .titleWrapper {
+    /* flex-direction: column !important; */
+    align-items: flex-start !important;
+    gap: 4px !important;
+  }
+
+  .rightSide {
+    padding-top: 0 !important;
+  }
+
+  .imagePlaceholder {
+    height: auto !important;
+    aspect-ratio: 946 / 694 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 40px 10px !important;
+  }
+
+  .section h2 {
+    /* font-size: 18px !important; */
+    margin-bottom: 20px !important;
+  }
+
+  .title,
+  .number {
+    /* font-size: 16px !important; */
+  }
+
+  .accordionContent p {
+    /* font-size: 14px !important; */
+    padding-left: 0 !important;
+  }
+
+  .icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .accordionHeader {
+    padding: 8px 0 !important;
+  }
+
+  .titleWrapper {
+    /* flex-direction: column !important; */
+    align-items: flex-start !important;
+    gap: 4px !important;
+  }
+
+  .accordionItem.active .accordionContent {
+    padding: 0 0 16px 0 !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .section {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

@@ -1,0 +1,184 @@
+/* Breakpoints / Responsive styles for FinishingTechnologies section */
+
+@media screen and (max-width: 1920px) {
+  .section {
+    padding: 3.125vw 12.5vw !important;
+  }
+
+  .section h2 {
+    font-size: 1.5625vw !important;
+    margin-bottom: 0.520833vw;
+  }
+
+  .section p {
+    font-size: 0.833333vw;
+  }
+
+  .cardsGrid {
+    gap: 0.833333vw;
+    margin-top: 1.666667vw !important;
+  }
+
+  .card {
+    padding: 1.041667vw 1.145833vw;
+    min-height: 14.0625vw;
+    border-radius: 0.208333vw;
+  }
+
+  .card:hover {
+    box-shadow: 0 0.208333vw 0.625vw rgba(0, 0, 0, 0.1);
+  }
+
+  .card h3 {
+    margin: 0 0 0.625vw 0;
+    font-size: 1.041667vw !important;
+  }
+
+  .card p {
+    max-width: 16.197917vw;
+    font-size: 0.729167vw !important;
+  }
+
+  .cardLarge h3 {
+    padding-bottom: 0.260417vw;
+    max-width: 7.5vw;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .section {
+    padding: 50px !important;
+  }
+
+  .section h2 {
+    font-size: 24px !important;
+  }
+
+  .section p {
+    font-size: 16px;
+  }
+
+  .cardsGrid {
+    gap: 20px !important;
+    margin-top: 35px !important;
+  }
+
+  .card {
+    padding: 20px 22px;
+
+    background-color: #fff;
+    transition: all 0.3s ease;
+    height: auto;
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 4px;
+  }
+
+  .card h3 {
+    font-size: 18px !important;
+  }
+
+  .card p {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card p {
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 40px !important;
+  }
+
+  .section h2 {
+    font-size: 20px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .cardsGrid {
+    margin-top: 23px !important;
+  }
+
+  /* .section h2 br {
+    display: none !important;
+  } */
+  .section h3 {
+    font-size: 18px !important;
+    margin-bottom: 16px;
+  }
+
+  .section p {
+
+    font-size: 18px !important;
+
+  }
+
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+
+  .card {
+    min-height: 220px !important;
+    padding: 20px 18px !important;
+  }
+
+
+
+  .cardLarge {
+    grid-column: span 2 !important;
+    grid-row: span 1 !important;
+    min-height: 340px !important;
+  }
+
+  .card h3 {
+    font-size: 18px !important;
+  }
+
+  .cardLarge h3 {
+    max-width: 100% !important;
+  }
+
+  .card p {
+    max-width: 296px !important;
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 40px 10px !important;
+  }
+
+
+
+  .cardsGrid {
+    margin-top: 20px !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .card {
+    min-height: 212px !important;
+    padding: 20px 18px !important;
+  }
+
+  .cardLarge {
+    grid-column: span 1 !important;
+    min-height: 352px !important;
+  }
+
+
+}
+
+
+@media screen and (max-width: 370px) {
+  .section {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

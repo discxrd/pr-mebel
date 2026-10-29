@@ -1,0 +1,578 @@
+/* Breakpoints / Responsive styles for Footer */
+
+@media screen and (max-width: 1920px) {
+
+  .footer {
+    padding: 1.5vw 0 !important;
+  }
+
+  .footerWrapper {
+    padding: 0 12.5vw;
+  }
+
+  .lineL {
+    left: 0;
+    height: 100%;
+    width: 0.052083vw;
+  }
+
+  .lineB {
+    display: none;
+  }
+
+
+
+  .linksPolicy {
+    gap: 0.520833vw;
+  }
+
+  .linksPolicy p {
+    font-size: 0.729167vw;
+  }
+
+  .linksPolicy a {
+    font-size: 0.625vw;
+  }
+
+  .col:nth-child(2) {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .colThird {
+    padding-left: 2vw;
+  }
+
+  .col h5 {
+    font-size: 0.729167vw;
+    margin-bottom: 1.041667vw;
+  }
+
+  .listNav {
+    gap: 0.520833vw;
+  }
+
+  .listNav a {
+    font-size: 0.729167vw;
+  }
+
+  .listContacts {
+    gap: 0.520833vw;
+    margin-bottom: 2.1875vw;
+  }
+
+  .listContacts a {
+    font-size: 0.729167vw;
+  }
+
+  .listSocial {
+    gap: 0.520833vw;
+    height: 1.770833vw;
+    align-items: center;
+  }
+
+  .listSocial a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.770833vw;
+    height: 1.770833vw;
+  }
+
+  .btnCallMe {
+    max-width: 8.229167vw;
+    height: 1.770833vw;
+    padding: 0.520833vw 1.25vw;
+    outline: 0.052083vw solid #E30613;
+    border-radius: 0.208333vw;
+    font-size: 0.625vw;
+  }
+
+  .colsLinkWrapper {
+    width: 100%;
+    max-width: 22vw;
+    gap: 0.520833vw;
+  }
+
+  .colFirst {
+    padding-right: 2vw;
+    margin-top: 0.520833vw;
+  }
+
+  .lineBFirst {
+    bottom: -1.302083vw;
+  }
+
+  .lineBSecond {
+    bottom: -1.822917vw;
+  }
+
+  .lineLThird {
+    left: 0;
+  }
+
+  .lineBThird {
+    bottom: -1.927083vw;
+  }
+
+  .colFirst img {
+    width: 4.0625vw !important;
+    height: 4.0625vw !important;
+  }
+
+  .footerLogoLink {
+    margin-bottom: 3.125vw;
+  }
+
+  .footerLogoText {
+    font-size: 0.729167vw !important;
+  }
+
+  .listSocial img {
+    width: 1.770833vw !important;
+    height: 1.770833vw !important;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .footer {
+    padding: 30px 0 !important;
+  }
+
+  .footerWrapper {
+    padding: 0 50px !important;
+  }
+
+  .lineL {
+    left: 0;
+    height: 100%;
+    width: 1px !important;
+  }
+
+  .lineB {
+    display: none;
+  }
+
+  .linksPolicy {
+    gap: 10px !important;
+  }
+
+  .linksPolicy p {
+    font-size: 14px !important;
+  }
+
+  .linksPolicy a {
+    font-size: 12px !important;
+  }
+
+  .col:nth-child(2) {
+    padding-left: 38px !important;
+    padding-right: 38px !important;
+  }
+
+  .colThird {
+    padding-left: 38px !important;
+  }
+
+  .col h5 {
+    font-size: 14px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .listNav {
+    gap: 10px !important;
+  }
+
+  .listNav a {
+    font-size: 14px !important;
+  }
+
+  .listContacts {
+    gap: 10px !important;
+    margin-bottom: 42px !important;
+  }
+
+  .listContacts a,
+  .listContacts p {
+    font-size: 14px !important;
+  }
+
+  .listSocial {
+    gap: 10px !important;
+    height: 34px !important;
+    align-items: center;
+  }
+
+  .listSocial a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .btnCallMe {
+    max-width: 158px !important;
+    height: 34px !important;
+    padding: 10px 24px !important;
+    outline: 1px solid #E30613 !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+  }
+
+  .colsLinkWrapper {
+    width: 100%;
+    max-width: 422px !important;
+    gap: 10px !important;
+  }
+
+  .colFirst {
+    padding-right: 38px !important;
+    margin-top: 10px !important;
+  }
+
+  .lineBFirst {
+    bottom: -25px !important;
+  }
+
+  .lineBSecond {
+    bottom: -35px !important;
+  }
+
+  .lineLThird {
+    left: 0 !important;
+  }
+
+  .lineBThird {
+    bottom: -37px !important;
+  }
+
+  .colFirst img {
+    width: 78px !important;
+    height: 78px !important;
+  }
+
+  .footerLogoLink {
+    margin-bottom: 60px;
+  }
+
+  .footerLogoText {
+    font-size: 14px !important;
+  }
+
+  .listSocial img {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 40px !important;
+  }
+
+  .footerWrapper {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+
+  .col {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .colFirst {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    gap: 16px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+    padding-bottom: 24px !important;
+  }
+
+  .lineL,
+  .lineR,
+  .lineB {
+    display: none !important;
+  }
+
+  .col:not(.colFirst) > img {
+    width: 150px !important;
+    max-width: 150px !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+  }
+
+  .colFirst img {
+    width: 78px !important;
+    max-width: 78px !important;
+    height: 78px !important;
+  }
+
+  .footerLogoLink {
+    gap: 20px !important;
+    margin-bottom: 40px;
+  }
+
+  .footerLogoText {
+    font-size: 14px !important;
+  }
+
+  .linksPolicy {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    flex-shrink: 0 !important;
+  }
+
+  .linksPolicy a {
+    font-size: 12px !important;
+  }
+  .linksPolicy p {
+    font-size: 14px !important;
+  }
+
+  .copyrightMobile {
+    display: block !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    line-height: 120% !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    margin-top: 12px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .copyrightDesktop {
+    display: none !important;
+  }
+
+  .col:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+    padding-bottom: 24px !important;
+  }
+
+  .colsLinkWrapper {
+    max-width: 100% !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .colLinkWrapper {
+    flex: 1 !important;
+  }
+
+  .col h5 {
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .listNav {
+    gap: 16px !important;
+  }
+
+  .listNav a {
+    font-size: 14px !important;
+  }
+
+  .colThird {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 20px !important;
+  }
+
+  .contactsCol {
+    flex: 1 1 auto !important;
+  }
+
+  .socialsCol {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    /* align-items: flex-end !important; */
+  }
+
+  .listContacts {
+    gap: 8px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .listContacts a,
+  .listContacts p {
+    font-size: 14px !important;
+  }
+
+  .listSocial {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 12px !important;
+    height: 44px !important;
+    margin-top: 10px !important;
+  }
+
+  .listSocial a {
+    width: 44px !important;
+    height: 44px !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+  }
+
+  .listSocial a img {
+    width: 44px !important;
+    height: 44px !important;
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  .btnCallMe {
+    flex-grow: 1 !important;
+    width: auto !important;
+    max-width: none !important;
+    height: 44px !important;
+    margin: 0 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    border: 1px solid #E30613 !important;
+    outline: none !important;
+    background-color: transparent !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    border-radius: 4px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease !important;
+    padding: 0 12px !important;
+  }
+
+  .btnCallMe:hover {
+    background-color: rgba(161, 132, 90, 0.1) !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 40px !important;
+  }
+
+  .footerWrapper {
+    padding: 0 !important;
+  }
+
+  .footerLogoLink {
+    margin-bottom: 0 !important;
+  }
+
+  .listSocial a {
+    width: 34px !important;
+    height: 34px !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+  }
+
+  .listSocial a img {
+    width: 34px !important;
+    height: 34px !important;
+    display: block !important;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .colThird {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .listSocial a {
+    width: 34px !important;
+    height: 34px !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+  }
+
+  .listSocial a img {
+    width: 34px !important;
+    height: 34px !important;
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  .copyrightMobile,
+  .linksPolicy p {
+    font-size: 12px !important;
+  }
+  .linksPolicy a {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 40px 10px !important;
+  }
+
+  .footerWrapper {
+    padding: 0 !important;
+  }
+
+  .col:nth-child(2) {
+    padding: 20px 0 !important;
+  }
+
+  .col:not(.colFirst) > img {
+    width: 120px !important;
+    max-width: 120px !important;
+  }
+
+  .colFirst img {
+    width: 78px !important;
+    max-width: 78px !important;
+    height: 78px !important;
+  }
+
+  .linksPolicy {
+    max-width: 190px !important;
+    flex-shrink: 1 !important;
+  }
+
+  .colThird {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .copyrightMobile,
+  .linksPolicy p {
+    font-size: 10px !important;
+  }
+  .linksPolicy a {
+    font-size: 12px !important;
+  }
+
+  .listNav a,
+  .listContacts a,
+  .listContacts p {
+    font-size: 14px !important;
+  }
+
+  .btnCallMe {
+    font-size: 14px !important;
+    padding: 0 16px !important;
+  }
+}

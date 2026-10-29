@@ -1,0 +1,158 @@
+/* --- Adaptive / Responsive styles for WorkFormat --- */
+
+@media screen and (max-width: 1920px) {
+  .section {
+    padding: 3.125vw 12.5vw;
+  }
+}
+
+@media (max-width: 1560px) {
+  .section h2 {
+    /* font-size: 36px; */
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+  .leftList {
+    gap: 20px;
+  }
+
+  .workFormatWrapper {
+    padding: 30px 0;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .rightImage {
+    max-width: 50%;
+    width: 50%;
+    height: auto;
+    min-height: 100%;
+    align-self: stretch;
+    flex-shrink: 0;
+  }
+
+  .rightImage img,
+  .mainImage {
+    position: absolute !important;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .itemHeader {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 1280px) {
+  .section {
+    padding: 60px 50px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .section {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 40px;
+  }
+
+  .section h2 {
+    font-size: 32px;
+    padding-bottom: 30px;
+  }
+
+  .workFormatWrapper {
+    padding: 20px 0;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .rightImage {
+    max-width: 100%;
+    height: 350px;
+    width: 100%;
+  }
+
+  .listItem {
+    flex-direction: column;
+  }
+
+
+
+  .number {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+
+  .itemHeader {
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 30px 10px;
+  }
+
+  .section h2 {
+    font-size: 26px;
+    padding-bottom: 20px;
+  }
+
+  .workFormatWrapper {
+    padding: 15px 0;
+    gap: 20px;
+  }
+
+  .rightImage {
+    height: 250px;
+  }
+
+
+
+
+
+  .number {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 16px;
+    padding-bottom: 0;
+  }
+
+  .itemHeader {
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}

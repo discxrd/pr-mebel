@@ -1,0 +1,385 @@
+/* --- Adaptive / Responsive styles for About --- */
+
+@media screen and (max-width: 1920px) {
+
+  .section {
+    max-width: none !important;
+    padding: 3.125vw 12.5vw !important;
+  }
+
+  .sectionCooperation {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 3.125vw 0;
+  }
+
+  .headWrapperCooperation {
+    max-width: 49.6875vw;
+  }
+
+  .headWrapper h4,
+  .headWrapper h2 {
+    font-size: 1.5625vw !important;
+    text-align: start !important;
+  }
+
+  .titleWrapper {
+    margin-right: 1.041667vw;
+    margin-top: 0.520833vw;
+  }
+
+  .bodyWrapperListCooperation {
+    padding-top: 2.604167vw;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+  }
+
+  .aboutMainTitle h4 {
+    font-size: 1.041667vw !important;
+
+  }
+
+  .aboutMainTitle .liener {
+    max-width: 5.208333vw;
+    height: 0.052083vw;
+    margin-top: 0.520833vw;
+    margin-bottom: 0.520833vw;
+  }
+
+  .aboutMainTitle p {
+    font-size: 0.729167vw !important;
+  }
+
+  .aboutItem {
+    gap: 0.364583vw;
+  }
+
+  .aboutItemCooperation {
+    gap: 0;
+  }
+
+  .coopIconWrapper {
+    margin-bottom: 0.417vw;
+  }
+
+  .coopIcon {
+    width: 3.125vw;
+    width: 3.125vw;
+  }
+
+  .coopDivider {
+    height: 0.052083vw;
+    margin-bottom: 0.417vw;
+  }
+
+  .bodyWrapperList {
+    max-width: none;
+    gap: 0.520833vw 3.020833vw;
+    padding-top: 1.5625vw;
+    display: grid;
+  }
+
+  .bodyWrapperListCooperation h3::before {
+    height: 0.052083vw;
+    bottom: -0.520833vw;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  .section {
+    padding: 50px 50px 36px !important;
+    max-width: none !important;
+  }
+
+  .headWrapper {
+    max-width: 100% !important;
+  }
+
+  .sectionCooperation {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 50px 0 36px;
+  }
+
+  .headWrapperCooperation {
+    max-width: 980px;
+    padding: 0 50px;
+  }
+
+  .bodyWrapperListCooperation {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .bodyWrapperList {
+    max-width: 100%;
+    padding: 30px 0;
+  }
+
+  .headWrapper h4,
+  .headWrapper h2 {
+    font-size: 24px !important;
+    padding: 0 0px;
+  }
+
+  .aboutMainTitle h4 {
+    font-size: 16px !important;
+  }
+
+  .aboutMainTitle .liener {
+    max-width: 100px !important;
+    height: 1px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .aboutMainTitle p {
+    font-size: 14px !important;
+  }
+
+  .bodyWrapperList {
+    gap: 23px 23px;
+  }
+
+  .aboutItemCooperation {
+    gap: 0;
+  }
+
+  .coopIconWrapper {
+    margin-bottom: 16px;
+  }
+
+  .coopIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .coopDivider {
+    height: 1px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+  .section {
+    max-width: none !important;
+    padding: 40px 40px 30px !important;
+  }
+
+  .sectionCooperation {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  .headWrapperCooperation {
+    max-width: 662px;
+  }
+
+  .bodyWrapperListCooperation {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .bodyWrapperList {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+
+  .bodyWrapperListCooperation {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .headWrapper h4,
+  .headWrapper h2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px !important;
+  }
+
+  .sectionCooperation {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 40px 0 !important;
+  }
+
+  .headWrapperCooperation {
+    max-width: 100% !important;
+    padding: 0 40px;
+  }
+
+  .bodyWrapperListCooperation {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+
+  .headWrapper {
+    text-align: center;
+  }
+
+  .titleWrapper {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .headWrapper h4,
+  .headWrapper h2 {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+
+  .headWrapper h4 br {
+    display: none;
+  }
+
+  .aboutItem {
+    justify-content: center !important;
+  }
+
+  .aboutItemCooperation {
+    align-items: flex-start !important;
+    margin: 0 !important;
+  }
+
+  .coopIconWrapper {
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .coopIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .coopDivider {
+    height: 1px;
+    margin-bottom: 16px;
+  }
+
+  .aboutMainTitle {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .aboutItemCooperation .aboutMainTitle {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .aboutMainTitle h4 {
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+
+  .aboutItemCooperation .aboutMainTitle h4 {
+    text-align: left !important;
+  }
+
+  .aboutMainTitle p {
+    text-align: center !important;
+  }
+
+  .aboutItemCooperation .aboutMainTitle p {
+    text-align: left !important;
+  }
+
+  .aboutMainTitle p,
+  .bodyWrapperList p,
+  .bodyWrapperListCooperation p {
+    font-size: 16px !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 10px !important;
+  }
+
+  .sectionCooperation {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 40px 0 !important;
+  }
+
+  .headWrapperCooperation {
+    max-width: 100% !important;
+    padding: 0 10px;
+  }
+
+  .bodyWrapperListCooperation {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .bodyWrapperListCooperation h3 {
+    font-size: 20px;
+  }
+
+  .bodyWrapperList {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .bodyWrapperListCooperation {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 20px;
+  }
+
+  .headWrapper h4,
+  .headWrapper h2 {
+    font-size: 20px !important;
+  }
+
+  .aboutMainTitle h4 {
+    font-size: 18px !important;
+  }
+
+  .aboutMainTitle p {
+    font-size: 16px !important;
+  }
+
+  .coopIconWrapper {
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  .coopIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .coopDivider {
+    height: 1px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Very large screens */
+@media (min-width: 1560px) {
+  .bodyWrapperList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .bodyWrapperListCooperation {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

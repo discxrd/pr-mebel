@@ -1,0 +1,408 @@
+/* Breakpoints / Responsive styles for FormDefault section */
+
+@media screen and (max-width: 1920px) {
+  .container {
+    grid-template-columns: minmax(27.083333vw, 50.6%) minmax(23.958333vw, 49.4%);
+    min-height: 21.25vw;
+  }
+
+  .content {
+    padding: 3.020833vw 0.989583vw 2.239583vw 2.552083vw;
+  }
+
+  .info {
+    width: min(100%, 36.979167vw);
+  }
+
+  .heading {
+    margin-bottom: 2.083333vw;
+  }
+
+  .heading h2 {
+    font-size: 1.5625vw;
+    padding-bottom: 0.520833vw;
+  }
+
+  .heading p {
+    font-size: 0.833333vw;
+  }
+
+  .headingNoFile {
+    margin-bottom: 2.083333vw;
+  }
+
+  .headingNoFile h2 {
+    margin-bottom: 0.3125vw;
+  }
+
+  .nameSectionNoFile {
+    margin-bottom: 0.520833vw;
+  }
+
+  .nameSection {
+    margin-bottom: 0.9375vw;
+  }
+
+  .middleRow {
+    margin-bottom: 0.46875vw;
+  }
+
+  .bottomRow {
+    column-gap: 1.041667vw;
+  }
+
+  .middleRowNoFile {
+    gap: 1.25vw;
+  }
+
+  .middleRowNoFile .communicationsSectionNoFile {
+    margin-bottom: 1.041667vw;
+  }
+
+  .nameSection input {
+    border-bottom: 0.052083vw solid rgba(244, 241, 235, 0.55);
+    font-size: 0.729167vw;
+    padding: 0 0.729167vw 0.416667vw;
+  }
+
+  .fileSection h4 {
+    margin: 0 0 0.520833vw;
+    font-size: 0.78125vw;
+  }
+
+  .communicationsSection h4 {
+    margin: 0 0 0.520833vw;
+    font-size: 0.78125vw;
+  }
+
+  .fileSectionWrapper {
+    gap: 0.364583vw;
+  }
+
+  .fileSection label {
+    min-height: 1.666667vw;
+    border: 0.052083vw solid #f4f1eb;
+    border-radius: 0.15625vw;
+    font-size: 0.625vw;
+    padding: 0.520833vw 0;
+  }
+
+  .clipIcon {
+    margin-right: 0.46875vw;
+  }
+
+  .nameFile {
+    min-height: 0.729167vw;
+    font-size: 0.625vw;
+  }
+
+  .uploadProgress {
+    min-height: 0.729167vw;
+    font-size: 0.625vw;
+  }
+
+  .communications {
+    gap: 1.09375vw;
+  }
+
+  .communications label {
+    gap: 0.416667vw;
+    font-size: 0.625vw;
+  }
+
+  .communications input[type="radio"] {
+    width: 0.833333vw;
+    height: 0.833333vw;
+  }
+
+  .buttonSend {
+    min-height: 2.34375vw;
+    border-radius: 0.15625vw;
+    font-size: 0.729167vw;
+  }
+
+  .buttonSend:hover:not(:disabled) {
+    transform: translateY(-0.052083vw);
+  }
+
+  .approval label {
+    grid-template-columns: 1.041667vw 1fr;
+    gap: 0.625vw;
+  }
+
+  .customCheckbox {
+    width: 1.041667vw;
+    height: 1.041667vw;
+    border: 0.052083vw solid #FFFFFF;
+    margin-top: 0.104167vw;
+  }
+
+  .approval span {
+    font-size: 0.625vw;
+  }
+
+  .error {
+    margin: -0.208333vw 0 0;
+    font-size: 0.625vw;
+  }
+
+  .bg {
+    min-height: 21.25vw;
+  }
+
+  .approval label span {
+    font-size: 0.625vw;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    grid-template-columns: minmax(512px, 55.6%) minmax(460px, 46.4%);
+  }
+
+  .communications input[type="radio"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .nameFile {
+    /* min-height: ; */
+    font-size: 10px;
+  }
+
+  .uploadProgress {
+    /* min-height: 0.729167vw; */
+    font-size: 12px;
+  }
+
+  .communications {
+    gap: 20px;
+  }
+
+  .communicationsSectionNoFile {
+    margin-bottom: 20px;
+    margin-right: 40px;
+  }
+
+  .communications label {
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .info {
+    padding-right: 10px;
+    width: 100%;
+
+  }
+
+  .heading h2 {
+
+    font-size: 24px;
+    padding-bottom: 10px;
+
+  }
+
+  .heading p {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
+  .nameSection input {
+    font-size: 14px;
+  }
+
+  .fileSection h4,
+  .communicationsSection h4 {
+    font-size: 15px;
+    margin: 0 0 10px;
+  }
+
+  .middleRow {
+    margin-bottom: 20px;
+  }
+
+  .nameSection {
+    margin-bottom: 20px;
+  }
+
+  .buttonSend {
+    font-size: 14px;
+    min-height: 45px;
+  }
+
+  .fileSection label {
+    font-size: 12px;
+    min-height: 32px;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+  }
+
+  .content {}
+
+  .heading {
+    margin-bottom: 40px;
+  }
+
+  .content {
+    padding: 50px 5px 50px 49px !important;
+
+    justify-content: flex-start;
+  }
+
+  .approval span {
+    font-size: 10px !important;
+  }
+
+  .approval label {
+    grid-template-columns: 20px 1fr !important;
+    gap: 12px !important;
+  }
+
+  .customCheckbox {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid #FFFFFF !important;
+    margin-top: 2px !important;
+  }
+
+  .buttonSend {
+    font-size: 14px;
+  }
+
+  .middleRowNoFile .communicationsSection {
+    /* display: block !important; */
+  }
+
+  .middleRowNoFile .communicationsSection h4 {
+    margin: 0 0 10px !important;
+  }
+
+  .middleRowNoFile .communications {
+    flex-wrap: wrap !important;
+    padding-right: 0 !important;
+  }
+
+  .error {
+    margin: -4px 0 0 !important;
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .content {
+    padding: 40px 40px !important;
+    max-width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .heading {
+    margin-bottom: 34px !important;
+  }
+
+  .nameSection,
+  .middleRow,
+  .bottomRow {
+    /* grid-template-columns: 1fr !important; */
+    row-gap: 18px !important;
+  }
+
+  .heading h2 {
+    font-size: 20px !important;
+  }
+
+  /* .heading h2 br {
+    display: none !important;
+  } */
+
+  .heading p {
+    font-size: 18px !important;
+  }
+
+  .communications {
+    gap: 14px !important;
+  }
+
+  .middleRowNoFile .communicationsSection {
+    /* display: block !important; */
+  }
+
+  .middleRowNoFile .communicationsSection h4 {
+    margin: 0 0 10px !important;
+  }
+
+  .middleRowNoFile .communications {
+    flex-wrap: wrap !important;
+  }
+
+  .bg {
+    min-height: 350px !important;
+  }
+
+  .desktopBg {
+    display: none !important;
+  }
+
+  .mobileBg {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .middleRowNoFile .communicationsSection {
+    display: block !important;
+  }
+
+  .nameSection,
+  .middleRow,
+  .bottomRow {
+    grid-template-columns: 1fr !important;
+    row-gap: 18px !important;
+  }
+
+  .nameSection input {
+    font-size: 16px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .fileSection h4 {
+    font-size: 16px !important;
+  }
+
+  .fileSection label {
+    font-size: 14px !important;
+  }
+
+  .communicationsSection h4 {
+    font-size: 16px !important;
+  }
+
+  .communications label {
+    font-size: 14px !important;
+  }
+.approval span {
+  font-size: 12px !important;
+}
+  .content {
+    padding: 40px 10px !important;
+  }
+
+  .heading h2 {
+    font-size: 20px !important;
+  }
+
+  .heading p {
+    font-size: 18px !important;
+  }
+
+  .communications {
+    gap: 12px !important;
+  }
+}

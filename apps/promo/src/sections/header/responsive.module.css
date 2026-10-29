@@ -1,0 +1,297 @@
+/* --- Adaptive / Responsive styles for Header --- */
+
+/* 1. Desktop only styles */
+@media screen and (min-width: 665px) {
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* 2. Responsive Breakpoints (sorted descending from largest to smallest) */
+
+/* Breakpoint 1920px (padding x 50px) */
+@media screen and (max-width: 1920px) {
+
+  .topHeaderInfo {
+    height: 1.822917vw;
+    padding: 0.416667vw 0;
+  }
+
+  .topHeaderInfoWrapper {
+    padding: 0 12.5vw;
+  }
+
+  .headerContainer {
+    padding: 0.520833vw 12.5vw;
+  }
+
+  .navList {
+    gap: 0.520833vw;
+  }
+
+  .logoNavWrapper {
+    gap: 0.625vw;
+  }
+
+  .rightSection {
+    gap: 0.625vw;
+  }
+
+  .linkTitle {
+    font-size: 0.729167vw;
+    padding-bottom: 0.104167vw;
+  }
+
+  .linkTitle::after {
+    bottom: -0.208333vw;
+    height: 0.052083vw;
+  }
+
+  .number {
+    font-size: 0.729167vw;
+  }
+
+  .rightTitleWrapper p span {
+    font-size: 0.729167vw;
+  }
+
+  .rightTitleWrapper {
+    gap: 3.125vw;
+  }
+
+  .rightTitleWrapper p {
+    gap: 0.520833vw;
+  }
+
+  .leftTitleText {
+    font-size: 0.729167vw;
+  }
+
+  .btnHeader {
+    font-size: 0.625vw;
+    padding: 0.416667vw 1.302083vw;
+    border-radius: 0.208333vw;
+  }
+
+  .btnHeader:hover {
+    outline: 0.052083vw solid #E30613;
+  }
+
+  .desktopScrolled {
+    transform: none;
+  }
+
+  .leftSection {
+    gap: 0.833333vw;
+    height: 3.125vw;
+  }
+
+  .logoWrapper {
+    width: auto;
+    margin-right: 2.083333vw;
+  }
+
+  .socialWrapper {
+    gap: 0.625vw;
+  }
+
+  .pinIcon {
+    width: 0.729167vw;
+    height: 0.729167vw;
+  }
+
+  .logoWrapper img {
+    width: auto !important;
+    height: 100% !important;
+  }
+
+  .socialWrapper img {
+    width: 1.5625vw !important;
+    height: 1.5625vw !important;
+  }
+
+  .rightTitleWrapper p img {
+    height: auto;
+  }
+
+  .rightTitleWrapper p:nth-child(1) img {
+    width: 0.833333vw !important;
+    height: 0.833333vw !important;
+  }
+
+  .rightTitleWrapper p:nth-child(2) img {
+    width: 0.833333vw !important;
+    height: 0.989583vw !important;
+  }
+}
+
+/* Breakpoint 1280px (padding x 50px) */
+@media screen and (max-width: 1280px) {
+
+  .topHeaderInfo {
+    height: 35px !important;
+    padding: 0 !important;
+  }
+
+  .desktopScrolled {
+    transform: translateY(-35px) !important;
+  }
+
+  .topHeaderInfoWrapper {
+    padding: 0 50px;
+    height: 100% !important;
+    align-items: center !important;
+  }
+
+  .headerContainer {
+    padding: 10px 50px;
+    height: auto !important;
+    min-height: 60px !important;
+    align-items: center !important;
+  }
+
+  /* Hide socials and CTA button on tablet viewports to fit navigation links */
+
+  .logoWrapper {
+    width: auto;
+    margin-right: 20px;
+  }
+
+  .logoWrapper img {
+    width: auto !important;
+    height: 100% !important;
+  }
+
+  .navList {
+    gap: 8px;
+  }
+
+  .logoNavWrapper {
+    gap: 8px;
+  }
+
+  .leftSection {
+    gap: 8px;
+  }
+
+  .rightSection {
+    gap: 10px;
+  }
+
+  .linkTitle {
+    font-size: 12px;
+  }
+
+  .number {
+    font-size: 12px;
+  }
+
+  .rightTitleWrapper p span {
+    font-size: 12px;
+  }
+
+  .leftTitleText {
+    font-size: 12px;
+  }
+
+  .socialWrapper img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .btnHeader {
+    font-size: 12px !important;
+    padding: 8px 24px !important;
+  }
+}
+
+/* Breakpoint 1160px (padding x 40px, Desktop hidden, Mobile shown) */
+@media screen and (max-width: 1160px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .topBar,
+  .mainHeader {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .mainHeader {
+    height: 70px !important;
+  }
+
+  .drawerHeader {
+    height: 70px !important;
+  }
+
+  .topBar {
+    max-height: 50px;
+  }
+
+  .topBarInner {
+    gap: 40px;
+  }
+
+  /* .topBarLabel {
+    width: 150px !important;
+  } */
+
+  .topBarLabel br {
+    display: none !important;
+  }
+
+  .topBarInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .drawerLink {
+    font-size: 14px !important;
+  }
+
+  .submitBtnMobile {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .topBar {
+    max-height: 65px;
+  }
+
+  .topBarInfo {
+    width: auto;
+    max-width: 300px;
+    flex-direction: column;
+  }
+}
+
+/* Breakpoint 480px (padding x 10px) */
+@media (max-width: 480px) {
+  .topBar {
+    display: none !important;
+  }
+
+  .mainHeader {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .drawer {
+    padding: 0 !important;
+  }
+
+  .drawerNav {
+    gap: 0 !important;
+  }
+}

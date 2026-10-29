@@ -1,0 +1,185 @@
+.section {
+  max-width: none;
+  margin: 0 auto;
+  padding: 3.125vw 12.5vw;
+}
+
+.sectionCooperation {
+  max-width: none;
+  width: 100%;
+  padding: 3.125vw 0;
+}
+
+.headWrapperCooperation {
+  max-width: 46.5625vw;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.headWrapper {
+  max-width: 49.6875vw;
+  width: 100%;
+}
+
+.headWrapper h2 {
+
+  font-weight: 400;
+
+  font-size: 1.328125vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: start;
+  text-transform: uppercase;
+
+}
+
+.titleWrapper {
+  width: 100%;
+  margin-right: 0.78125vw;
+  margin-top: 0.390625vw;
+}
+
+.liener {
+  /* empty */
+}
+
+.headWrapper h4 {
+  font-weight: 400;
+  font-size: 1.328125vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.coopCardTitle {
+  color: rgba(31, 30, 26, 1) !important;
+  margin-bottom: 0.520833vw;
+}
+
+.headWrapper h4 span {
+  color: #E30613;
+}
+
+.bodyWrapperList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  gap: 0.9375vw 0.9375vw;
+  padding-top: 1.40625vw;
+}
+
+.bodyWrapperListCooperation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 1.953125vw;
+  width: 100%;
+  max-width: none;
+  padding-left: 17.578125vw;
+  padding-right: 17.578125vw;
+  box-sizing: border-box;
+  gap: 1.5625vw;
+}
+
+.aboutMainTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.aboutMainTitle h4 {
+  font-weight: 400;
+  font-size: 0.9375vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #E30613;
+}
+
+.aboutMainTitle .liener {
+  max-width: 3.90625vw;
+  width: 100%;
+  height: 0.0390625vw;
+  background-color: #E30613;
+  margin-top: 0.390625vw;
+  margin-bottom: 0.390625vw;
+}
+
+.aboutMainTitle p {
+  font-weight: 400;
+  font-size: 0.546875vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+  color: rgba(31, 30, 26, 1);
+}
+
+.aboutItem {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.2734375vw;
+  width: 100%;
+}
+
+.aboutItemCooperation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+}
+
+.coopIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.417vw;
+}
+
+.coopIcon {
+  width: 3.125vw;
+  height: 3.125vw;
+  object-fit: contain;
+}
+
+.coopDivider {
+  width: 100%;
+  height: 0.0390625vw;
+  background-color: rgba(31, 30, 26, 0.5);
+  margin-bottom: 0.417vw;
+}
+
+.bodyWrapperListCooperation h3 {
+  font-weight: 400;
+  font-size: clamp(0.625vw, 2vw, 0.78125vw);
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #1f1e1a;
+  position: relative;
+}
+
+.bodyWrapperListCooperation h3::before {
+  content: "";
+  width: 85%;
+  height: 0.0390625vw;
+  background-color: #1f1e1a;
+  position: absolute;
+  bottom: -0.390625vw;
+  left: 0;
+}
+
+.bodyWrapperListCooperation p {
+  font-weight: 400;
+  font-size: clamp(0.546875vw, 1.8vw, 0.625vw);
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #525252;
+  margin: 0;
+}

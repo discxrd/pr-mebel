@@ -1,0 +1,26 @@
+.bgButton{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.desktopBg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mobileBg {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktopBg {
+    display: none !important;
+  }
+  .mobileBg {
+    display: block !important;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,300 @@
+/* Breakpoints / Responsive styles for FormBottom section */
+
+@media screen and (max-width: 1920px) {
+
+  .formSection {
+    padding: 8.541667vw 0;
+  }
+
+  .wrapper {
+    max-width: 36.875vw !important;
+    padding: 2.083333vw !important;
+    border-radius: 0.208333vw;
+  }
+
+  .heading {
+    font-size: 1.5625vw !important;
+  }
+
+  .subheading {
+    font-size: 0.833333vw !important;
+    margin: 0 0 1.458333vw;
+  }
+
+  .inputRow {
+    gap: 1.5625vw;
+    margin-bottom: 0.260417vw;
+  }
+
+  .input,
+  .textarea {
+    font-size: 0.729167vw !important;
+    border-bottom: 0.052083vw solid #777777;
+    padding: 0.625vw 0;
+  }
+
+  .textareaRow {
+    margin-bottom: 0.3125vw;
+  }
+
+  .fileRow {
+    margin-bottom: 1.5625vw;
+  }
+
+  .fileText {
+    font-size: 0.729167vw !important;
+  }
+
+  .fileUploadBtn {
+    font-size: 0.625vw !important;
+    gap: 0.520833vw;
+    padding: 0.260417vw 0 !important;
+    width: 15.885417vw !important;
+    justify-content: center !important;
+    border: 0.052083vw solid #FFFFFF;
+    border-radius: 0.104167vw;
+  }
+
+  .footerRow {
+    gap: 1.5625vw;
+  }
+
+  .checkboxWrapper {
+    gap: 0.625vw;
+  }
+
+  .customCheckbox {
+    width: 1.041667vw;
+    height: 1.041667vw;
+    border: 0.052083vw solid #777777;
+    margin-top: 0.104167vw;
+  }
+
+  .checkboxText {
+    font-size: 0.520833vw !important;
+  }
+
+  .submitBtn {
+    font-size: 0.729167vw !important;
+    padding: 0.520833vw 0 !important;
+    width: 15.885417vw !important;
+    border-radius: 0.208333vw;
+  }
+
+  .socials {
+    bottom: -1.302083vw;
+  }
+
+  .error {
+    font-size: 0.677083vw;
+    margin: 0.3vw 0;
+  }
+
+  .errorContainerWithFile {
+    padding-top: 1.5vw !important;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .formSection {
+    padding: 110px 0 !important;
+  }
+
+  .wrapper {
+    max-width: 780px !important;
+    padding: 40px 20px !important;
+    border-radius: 4px !important;
+  }
+
+  .heading {
+    font-size: 24px !important;
+    margin: 0 0 10px 0 !important;
+  }
+
+  .subheading {
+    font-size: 16px !important;
+    margin: 0 0 30px 0 !important;
+  }
+
+  .inputRow {
+    gap: 20px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .input,
+  .textarea {
+    font-size: 14px !important;
+    border-bottom: 1px solid #777777 !important;
+    padding: 8px 0 !important;
+  }
+
+  .textareaRow {
+    margin-bottom: 5px !important;
+  }
+
+  .fileRow {
+    margin-bottom: 30px !important;
+  }
+
+  .fileText {
+    font-size: 14px !important;
+  }
+
+  .fileUploadBtn {
+    font-size: 12px !important;
+    gap: 8px !important;
+    padding: 6px 66px !important;
+    border: 1px solid #FFFFFF !important;
+    border-radius: 2px !important;
+    width: auto !important;
+    justify-content: flex-start !important;
+  }
+
+  .footerRow {
+    gap: 20px !important;
+  }
+
+  .checkboxWrapper {
+    gap: 12px !important;
+  }
+
+  .customCheckbox {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid #777777 !important;
+    margin-top: 2px !important;
+  }
+
+  .checkboxText {
+    font-size: 10px !important;
+  }
+
+  .submitBtn {
+    font-size: 14px !important;
+    padding: 8px 54px !important;
+    border-radius: 4px !important;
+    width: auto !important;
+  }
+
+  .nameFile {
+    bottom: auto !important;
+    top: calc(100% + 6px) !important;
+  }
+
+  .error {
+    font-size: 12px !important;
+    margin: 6px 0 !important;
+  }
+
+  .errorContainerWithFile {
+    padding-top: 26px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .formSection {
+    padding: 40px 0 !important;
+  }
+
+  .wrapper {
+    max-width: 100% !important;
+    padding: 20px 50px !important;
+  }
+
+  .heading {
+    font-size: 20px !important;
+  }
+
+  .subheading {
+    font-size: 18px !important;
+  }
+
+  .input,
+  .textarea {
+    font-size: 16px !important;
+  }
+
+  .fileText {
+    font-size: 14px !important;
+  }
+
+  .fileUploadBtn {
+    font-size: 14px !important;
+  }
+
+  .submitBtn {
+    font-size: 14px !important;
+    width: auto !important;
+  }
+
+  .checkboxText {
+    font-size: 10px !important;
+  }
+
+  .inputRow {
+    flex-direction: row !important;
+    gap: 30px !important;
+  }
+
+  .fileRow {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+  }
+
+  .footerRow {
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 30px !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .formSection {
+    padding: 40px 0 !important;
+  }
+
+  .wrapper {
+    padding: 40px 10px !important;
+  }
+
+
+
+
+
+  .fileUploadBtn {
+    /* font-size: 12px !important; */
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 12px 20px !important;
+  }
+
+  .submitBtn {
+    /* font-size: 14px !important; */
+    width: 100% !important;
+  }
+
+  .checkboxText {
+    font-size: 12px !important;
+  }
+
+  .inputRow {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .fileRow {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .footerRow {
+    flex-direction: column-reverse !important;
+    align-items: stretch !important;
+    gap: 24px !important;
+  }
+}

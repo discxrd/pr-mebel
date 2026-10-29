@@ -1,0 +1,269 @@
+.footer {
+  width: 100%;
+  background-color: rgba(47, 47, 47, 1);
+  padding: 1.5vw 0;
+}
+
+.colFirst img {
+  width: 4.0625vw !important;
+  height: 4.0625vw !important;
+}
+
+.footerLogoLink {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.041667vw;
+  margin-bottom: 3.125vw;
+}
+
+.footerLogoText {
+  font-weight: 400;
+  font-size: 0.729167vw;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 0.15625vw;
+}
+
+.listSocial img {
+  width: 1.328125vw !important;
+  height: 1.328125vw !important;
+}
+
+.footerWrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 12.5vw;
+
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.lineL,
+.lineR,
+.lineB {
+  position: absolute;
+
+
+  background: #834DA1;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 1%, rgb(69, 69, 69) 49%, rgb(42, 42, 42) 99%);
+}
+
+.lineL {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+  height: 100%;
+  width: 0.0390625vw;
+}
+
+
+
+.lineB {
+  display: none;
+}
+
+
+
+
+
+.linksPolicy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.390625vw;
+}
+
+.linksPolicy p {
+
+  font-weight: 400;
+
+  font-size: 0.729167vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.linksPolicy a {
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgba(217, 217, 217, 1);
+}
+
+.linksPolicy a:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+}
+
+.col:nth-child(2) {
+  flex: 1.6 1 0%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.col h5 {
+
+  font-weight: 400;
+
+  font-size: 0.729167vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.78125vw;
+}
+
+.listNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.390625vw;
+}
+
+.listNav a {
+
+  font-weight: 400;
+
+  font-size: 0.729167vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.listNav a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+}
+
+.listContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.390625vw;
+  margin-bottom: 1.640625vw;
+}
+
+.listContacts p {
+  font-weight: 400;
+
+  font-size: 0.729167vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.listContacts a {
+
+  font-weight: 400;
+
+  font-size: 0.729167vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.listContacts .number {}
+
+.listContacts a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.listSocial {
+  display: flex;
+  gap: 0.390625vw;
+  height: 1.328125vw;
+  align-items: center;
+}
+
+.listSocial a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.328125vw;
+  height: 1.328125vw;
+}
+
+.btnCallMe {
+  /* max-width: 6.171875vw;
+  height: 1.328125vw; */
+  padding: 0.390625vw 0.9375vw;
+  outline: 0.0390625vw solid #E30613;
+  border: none;
+  border-radius: 0.15625vw;
+
+
+  font-weight: 400;
+
+  font-size: 0.625vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.btnCallMe:hover {
+  background-color: #E30613;
+  /* color: rgba(255, 255, 255, 0.5); */
+}
+
+.colsLinkWrapper {
+  display: flex;
+  width: 100%;
+  max-width: 22vw;
+  justify-content: space-between;
+  gap: 0.390625vw;
+}
+
+.colFirst {
+  flex: 1 1 0%;
+  padding-right: 2vw;
+  margin-top: 0.390625vw;
+}
+
+.lineBFirst {
+  bottom: -0.9765625vw;
+}
+
+.lineBSecond {
+  bottom: -1.3671875vw;
+}
+
+.lineLThird {
+  left: 0;
+}
+
+.lineBThird {
+  bottom: -1.4453125vw;
+}
+
+.colThird {
+  flex: 1.2 1 0%;
+  padding-left: 2vw;
+}
+
+.contactsCol {}
+
+.socialsCol {}
+
+.copyrightMobile {
+  display: none;
+}

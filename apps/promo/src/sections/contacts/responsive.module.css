@@ -1,0 +1,151 @@
+/* Breakpoints / Responsive styles for Contacts section */
+
+@media screen and (max-width: 1920px) {
+  .container {
+    padding: 3.125vw 12.5vw !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    padding: 50px 50px !important;
+  }
+  .titleContact {
+    font-size: 24px !important;
+    margin-bottom: 30px !important;
+  }
+  .contactsListWrapper {
+    gap: 24px !important;
+    margin-bottom: 40px !important;
+  }
+  .contactCard {
+    height: auto !important;
+  }
+  .bannerCard {
+    min-height: 200px !important;
+  }
+  .salonCard {
+    min-height: 250px !important;
+  }
+  .salonCard .cardRight {
+    height: 200px !important;
+  }
+  .contactCard {
+    padding: 20px !important;
+  }
+  .bannerCard {
+    padding: 10px 20px !important;
+  }
+  .cardLeft {
+    padding: 0 !important;
+  }
+  .bannerLeft h3 {
+    font-size: 20px !important;
+    margin-bottom: 12px !important;
+  }
+  .bannerLeft p {
+    font-size: 16px !important;
+    margin-bottom: 20px !important;
+  }
+  .btnContact {
+    padding: 12px 30px !important;
+    font-size: 13px !important;
+  }
+  .cardTitle {
+    font-size: 20px !important;
+    margin-bottom: 24px !important;
+  }
+  .cardDetailsGrid {
+    gap: 30px !important;
+  }
+  .detailLabel {
+    font-size: 14px !important;
+  }
+  .detailValue,
+  .detailValueLink {
+    font-size: 16px !important;
+  }
+  .metroBlock {
+    margin-top: 6px !important;
+  }
+  .mapWrapper {
+    height: 400px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 40px 20px !important;
+  }
+  .titleContact {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .contactCard {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+  .cardLeft {
+    width: 100% !important;
+    padding: 24px 20px 20px 20px !important;
+  }
+  .bannerLeft {
+    padding: 24px 20px 20px 20px !important;
+  }
+  .cardRight {
+    width: 100% !important;
+    height: 200px !important;
+    margin-top: 0 !important;
+  }
+  .cardImg {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  .bannerLeft h3 {
+    font-size: 20px !important;
+  }
+  .bannerLeft p {
+    font-size: 16px !important;
+  }
+  .cardTitle {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .contactCard [class*="detailLabel"] {
+    font-size: 14px !important;
+  }
+  .contactCard [class*="detailValue"] {
+    font-size: 16px !important;
+  }
+  .cardDetailsGrid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .cardDetailsGridOffice {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    grid-auto-flow: row !important;
+    gap: 20px !important;
+  }
+  .order1, .order2, .order3, .order4, .order5, .order6, .order7 {
+    order: 0 !important;
+  }
+  .mapWrapper {
+    height: 350px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 30px 15px !important;
+  }
+  .cardLeft,
+  .bannerLeft {
+    padding: 20px 15px 15px 15px !important;
+  }
+  .mapWrapper {
+    height: 300px !important;
+  }
+}

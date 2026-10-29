@@ -1,0 +1,371 @@
+/* Breakpoints / Responsive styles for Productions section */
+
+.section {
+  /* Declared here so CSS Modules always exports r.section */
+}
+
+@media screen and (max-width: 1920px) {
+  .scectionWrapper {
+    padding: 3.125vw 12.5vw !important;
+  }
+
+  .gridContainer {
+    grid-auto-rows: minmax(9.635417vw, auto);
+    gap: 0.520833vw;
+    grid-template-columns: 451fr 356fr 279fr;
+  }
+
+  .smallImagesWrapper {
+    gap: 1.041667vw;
+  }
+
+  .textBlock h2 {
+    font-size: 1.5625vw !important;
+    margin-bottom: 0.833333vw;
+  }
+
+  .textBlock p {
+    font-size: 0.833333vw !important;
+  }
+
+  .card {
+    padding: 1.041667vw;
+    border-radius: 0.208333vw;
+  }
+
+  .icon {
+    top: 1.041667vw;
+    right: 1.041667vw;
+    width: 2.083333vw !important;
+    height: 2.083333vw !important;
+  }
+
+  .content h3 {
+    font-size: 1.25vw;
+  }
+
+  .content p {
+    max-width: 18.229167vw;
+    font-size: 0.833333vw;
+  }
+
+  .darkCard .liener {
+    width: 6.875vw;
+    height: 0.052083vw;
+    margin: 0.520833vw 0;
+  }
+
+  .whiteCard .liener {
+    width: 6.875vw;
+    height: 0.052083vw;
+    margin: 0.520833vw 0;
+  }
+
+  .smallImg img {
+    border-radius: 0.208333vw;
+  }
+
+  .mainImage img {
+    border-radius: 0.208333vw;
+  }
+
+  .submitBtn {
+    height: 2.604167vw;
+    font-size: 0.729167vw;
+    border-radius: 0.208333vw;
+  }
+
+  .card h3 {
+    font-size: 1.041667vw !important;
+  }
+
+  .card p {
+    font-size: 0.729167vw !important;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .scectionWrapper {
+    padding: 50px !important;
+  }
+
+  .textBlock h2 {
+    font-size: 24px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .textBlock p {
+    font-size: 16px !important;
+  }
+
+  .card h3 {
+    font-size: 18px !important;
+  }
+
+  .card p {
+    font-size: 14px !important;
+    max-width: 100%;
+  }
+
+  .icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(185px, auto);
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .smallImagesWrapper {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .icon {
+    top: 20px;
+    right: 20px;
+  }
+
+  .darkCard .liener,
+  .whiteCard .liener {
+    width: 132px;
+    height: 1px;
+    margin: 10px 0;
+  }
+
+  .smallImg img,
+  .mainImage img {
+    border-radius: 4px;
+  }
+
+  .submitBtn {
+    height: 50px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scectionWrapper {
+    padding: 40px !important;
+  }
+
+  .textBlock h2 {
+    font-size: 20px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .textBlock h2 br {
+    display: none !important;
+  }
+
+  .textBlock p {
+    font-size: 18px !important;
+  }
+
+  .textBlock p br {
+    display: none !important;
+  }
+
+  .card h3 {
+    font-size: 18px !important;
+  }
+
+  .card h3 br {
+    display: none !important;
+  }
+
+  .card p {
+    font-size: 16px !important;
+  }
+
+  .icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    grid-auto-rows: auto !important;
+  }
+
+  .textBlock {
+    grid-area: 1 / 1 / 2 / 3 !important;
+  }
+
+  .mainImage {
+    grid-area: 2 / 1 / 3 / 3 !important;
+    aspect-ratio: 343 / 130 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  .card1 {
+    grid-area: 3 / 1 / 4 / 2 !important;
+  }
+
+  .card2 {
+    grid-area: 3 / 2 / 4 / 3 !important;
+  }
+
+  .smallImagesWrapper {
+    grid-area: 4 / 1 / 5 / 3 !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  .smallImg {
+    aspect-ratio: 1 / 1 !important;
+    height: 185px !important;
+  }
+
+  .card3 {
+    grid-area: 5 / 1 / 6 / 2 !important;
+  }
+
+  .card4 {
+    grid-area: 5 / 2 / 6 / 3 !important;
+  }
+
+  .btnWrapper {
+    grid-area: 6 / 1 / 7 / 3 !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+
+  .card {
+    height: auto !important;
+    min-height: 185px !important;
+    padding: 24px 20px !important;
+  }
+
+  .submitBtn {
+    width: 100% !important;
+    background-color: #E30613 !important;
+    height: 50px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section {
+    /* empty but defined so CSS Modules exports r.section */
+  }
+
+  .mainImage {
+    grid-area: auto !important;
+    aspect-ratio: 343 / 224 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  .gridContainer .card {
+    height: auto !important;
+    min-height: 130px !important;
+    padding: 24px 20px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+  .textBlock h2 {
+    /* font-size: 18px !important; */
+  }
+
+  .textBlock p {
+    /* font-size: 14px !important; */
+  }
+
+  .gridContainer .card h3 {
+    font-size: 18px !important;
+  }
+
+  .gridContainer .card p {
+    /* font-size: 14px !important; */
+  }
+
+  .gridContainer .icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gridContainer .textBlock,
+  .gridContainer .mainImage,
+  .gridContainer .card1,
+  .gridContainer .card2,
+  .gridContainer .card3,
+  .gridContainer .card4,
+  .gridContainer .btnWrapper {
+    grid-area: auto !important;
+  }
+
+  .gridContainer .smallImagesWrapper {
+    grid-area: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+  }
+
+  .smallImg {
+    aspect-ratio: 1 / 1 !important;
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .scectionWrapper {
+    padding: 40px 10px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .scectionWrapper {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .coopBtnContainer {
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coopCard {
+    grid-area: auto !important;
+  }
+  .coopCard4,
+  .coopCard6 {
+    grid-area: auto !important;
+  }
+  .coopBtnContainer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .gridContainerCooperation {
+    grid-template-columns: 451fr 317.5fr 317.5fr;
+  }
+}

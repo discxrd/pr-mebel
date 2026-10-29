@@ -1,0 +1,32 @@
+{
+  "name": "pr-mebel-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/formidable": "^3.4.5",
+    "@types/uuid": "^10.0.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.2.5",
+    "turbo": "^2.2.1",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "pnpm": ">=8"
+  },
+  "packageManager": "pnpm@9.12.1+sha512.e5a7e52a4183a02d5931057f7a0dbff9d5e9ce3161e33fa68ae392125b79282a8a8a470a51dfc8a0ed86221442eb2fb57019b0990ed24fab519bf0e1bc5ccfc4",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.886.0",
+    "@aws-sdk/s3-request-presigner": "^3.886.0",
+    "@types/archiver": "^6.0.3",
+    "archiver": "^7.0.1",
+    "formidable": "^3.5.4",
+    "uuid": "^13.0.0"
+  }
+}

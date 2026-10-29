@@ -1,0 +1,120 @@
+.section {
+  width: 100%;
+  background: rgba(247, 247, 247, 1);
+}
+
+.sectionWrapper {
+  margin: 0 auto;
+  padding: 3.125vw 17.578125vw;
+}
+
+.cardsImage {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.78125vw;
+  margin-top: 1.6796875vw;
+}
+
+.cardsImage .image {
+  width: 100%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 1.328125vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgba(31, 30, 26, 1);
+  margin-bottom: 0.546875vw;
+}
+
+.subtitle {
+  max-width: 34.765625vw;
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.703125vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgba(31, 30, 26, 1);
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6640625vw 1.171875vw;
+  margin-top: 1.5625vw;
+}
+
+.card {
+  background-color: rgba(247, 247, 247, 1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.cardCoop {
+  padding: 1.171875vw;
+  border: 0.0390625vw solid #e5e5e5;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.cardCoop:nth-child(2) {
+  background: #2f2f2f;
+  border: 0.0390625vw solid #f2f0eb;
+}
+
+.cardCoop:nth-child(2) h3 {
+  color: #c6ae8a;
+}
+
+.cardCoop:nth-child(2) p {
+  color: #d9d9d9;
+}
+
+.cardCoop:nth-child(2) .line {
+  background-color: #c6ae8a;
+}
+
+.icon {
+  right: 1.171875vw;
+  width: 2.34375vw;
+  height: 2.34375vw;
+}
+
+.icon img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
+.iconWrapper {
+  padding-bottom: 0.390625vw;
+  margin-bottom: 0.390625vw;
+  border-bottom: 0.0390625vw solid rgba(31, 30, 26, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content {
+}
+
+.content h3 {
+  font-weight: 400;
+  font-size: 0.9375vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #1f1e1a;
+  margin-bottom: 0.390625vw;
+}
+
+.content p {
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+}

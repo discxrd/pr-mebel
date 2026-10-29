@@ -1,0 +1,92 @@
+/* Breakpoints / Responsive styles for Company section */
+
+@media screen and (max-width: 1920px) {
+
+  .section {
+    padding: 3.125vw 12.5vw;
+  }
+
+  .title {
+    font-size: 1.5625vw;
+    margin-bottom: 1.041667vw;
+  }
+
+  .cardsWrapper {
+    gap: 1.041667vw 4.166667vw;
+    padding-top: 0.677083vw;
+  }
+
+  .cardImage {
+    max-width: 11.458333vw;
+    max-height: 11.458333vw;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .section {
+    padding: 40px 50px 50px 50px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .cardsWrapper {
+    gap: 41px 80px;
+  }
+
+  .cardImage {
+    max-width: 150px !important;
+    max-height: 150px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 40px !important;
+  }
+
+  .title {
+    font-size: 20px !important;
+    padding: 0;
+    /* text-align: center; */
+  }
+
+  /* .title br {
+    display: none;
+  } */
+
+  .cardsWrapper {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px 16px;
+    justify-items: center;
+  }
+
+  /* .cardsWrapper>div:last-child {
+    display: none !important;
+  } */
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 46px 10px !important;
+  }
+
+  .title {
+    /* font-size: 20px !important; */
+    padding: 0;
+    line-height: 130%;
+  }
+
+  .cardsWrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 16px;
+    justify-items: center;
+  }
+
+  .cardsWrapper>div:last-child {
+    display: none !important;
+  }
+}

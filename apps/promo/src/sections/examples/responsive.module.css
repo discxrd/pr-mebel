@@ -1,0 +1,942 @@
+/* --- Adaptive / Responsive styles for Examples (Portfolio) --- */
+
+/* Base desktop styles (neutralize mobile layout wrappers) */
+.mobileGalleryContainer,
+.mobileNavContainer {
+  display: none !important;
+}
+
+.socialActionsContainer,
+.cornerFrame {
+  display: contents;
+}
+
+.corner {
+  display: none !important;
+}
+
+@media screen and (max-width: 1920px) {
+
+  .section {
+    padding-top: 3.125vw !important;
+    padding-bottom: 3.125vw !important;
+  }
+
+  .container {
+    padding: 0 12.5vw !important;
+  }
+
+  .titleProjectMain {
+    font-size: 1.041667vw;
+  }
+
+  .cardTitleLabel {
+    font-size: 0.729167vw;
+  }
+
+  .cardTitleValue {
+    font-size: 1.041667vw;
+  }
+
+  .title {
+    font-size: 1.5625vw;
+    padding-bottom: 1.5625vw;
+  }
+
+  .cardProjectList {
+    gap: 1.197917vw 1.041667vw;
+  }
+
+  .btnMoreProkect {
+    padding-top: 1.5625vw;
+  }
+
+  .btnMoreProkect button {
+    padding: 0.729167vw 2.291667vw;
+    font-size: 0.729167vw;
+    border-radius: 0.208333vw;
+    border: 0.052083vw solid rgba(31, 30, 26, 1);
+  }
+
+  .cardImageContainer {
+    border-radius: 0.208333vw;
+    box-shadow: 0 0.520833vw 1.25vw rgba(0, 0, 0, 0.08);
+  }
+
+  .cardImageContainerHovered {
+    box-shadow: 0 0.9375vw 1.875vw rgba(0, 0, 0, 0.11), 0 1.770833vw 3.645833vw rgba(0, 0, 0, 0.12);
+  }
+
+  .cardDetailsOverlay {
+    padding: 2.083333vw 1.666667vw 1.666667vw 1.666667vw;
+  }
+
+  .cardDetailsFacts {
+    gap: 1.041667vw;
+  }
+
+  .cardDetailsFactItem {
+    gap: 0.208333vw;
+  }
+
+  .cardFooter {
+    margin-top: 0.416667vw;
+    padding-left: 0.208333vw;
+    padding-right: 0.208333vw;
+  }
+
+  /* Dialog Content / Grid / Columns */
+  .dialogContent {
+    width: min(94vw, 62.291667vw);
+    border-radius: 0.104167vw;
+    padding: 0.833333vw;
+    box-shadow: 0 1.5625vw 4.6875vw rgba(0, 0, 0, 0.32);
+  }
+
+  .dialogContent .dialogGrid {
+    gap: 0.833333vw;
+    display: flex;
+  }
+
+  .dialogContent .leftColumn {
+    width: 39.0625vw;
+    gap: 0.625vw;
+  }
+
+  .dialogContent .mainImageWrapper {
+    border-radius: 0.104167vw;
+    box-shadow: 0 0.625vw 1.5625vw rgba(0, 0, 0, 0.18);
+    width: 39.0625vw;
+    height: 21.975vw;
+  }
+
+  .dialogContent .navButtonsContainer {
+    padding-left: 0.625vw;
+    padding-right: 0.625vw;
+  }
+
+  .dialogContent .thumbnailList {
+    gap: 0.520833vw;
+    padding: 0.208333vw;
+  }
+
+  .dialogContent .thumbnailBtn {
+    height: 3.125vw;
+    width: 6.0416666vw;
+    border-radius: 0.416667vw;
+    border: 0.052083vw solid transparent;
+  }
+
+  .dialogContent .thumbnailBtnActive {
+    border: 0.208333vw solid #d0b68a !important;
+    box-shadow: 0 0 0 0.052083vw rgba(208, 182, 138, 0.35);
+  }
+
+  .dialogContent .rightColumn {
+    gap: 0.833333vw;
+    padding: 0.208333vw 0.208333vw 0 0.208333vw;
+    width: 100%;
+  }
+
+  .dialogContent .dialogInfoRow {
+    gap: 0.833333vw;
+  }
+
+  .dialogContent .dialogInfoContent {
+    gap: 0.833333vw;
+  }
+
+  .dialogContent .dialogTitle {
+    font-size: 1.04166vw;
+    margin-bottom: 1.004vw;
+  }
+
+  .dialogContent .dialogFacts {
+    gap: 0.625vw;
+  }
+
+  .dialogContent .factItem {
+    gap: .520833vw;
+  }
+
+  .dialogContent .factLabel {
+    font-size: 0.729167vw;
+  }
+
+  .dialogContent .factValue {
+    font-size: 0.9375vw;
+  }
+
+  .dialogContent .dialogDescriptionBlock {
+    gap: 0.416667vw;
+  }
+
+  .dialogContent .dialogDescriptionTitle {
+    font-size: 0.572917vw;
+  }
+
+  .dialogContent .dialogDescriptionText {
+    font-size: 0.677083vw;
+  }
+
+  .dialogContent .dialogActions {
+    gap: 0.625vw;
+    padding-top: 0.416667vw;
+  }
+
+  .dialogContent .socialBtnWrapper {
+    gap: 0.416667vw;
+  }
+
+  .dialogContent .socialBtn {
+    width: 2.291667vw;
+    height: 2.291667vw;
+  }
+
+  .dialogContent .dialogSubmitBtn {
+    min-width: 9.375vw;
+    border-radius: 0.104167vw;
+    padding: 0.625vw 1.041667vw;
+    font-size: 0.677083vw;
+  }
+
+  .dialogContent .dialogClose {
+    top: 0.833333vw !important;
+    right: 0.833333vw !important;
+    width: 1.666667vw !important;
+    height: 1.666667vw !important;
+    border-radius: 520.78125vw !important;
+  }
+
+  .dialogContent .socialIconImg {
+    width: 2.291667vw;
+    height: 2.291667vw;
+  }
+
+  .dialogContent .closeIcon,
+  .dialogContent .closeIconWhite {
+    width: 1.25vw;
+    height: 1.25vw;
+  }
+
+  /* Viewer Overrides */
+  .viewerContent .viewerDesktopImageArea {
+    padding: 1.25vw;
+  }
+
+  .viewerContent .viewerNavBtn {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 520.78125vw;
+    border: 0.052083vw solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+  }
+
+  .viewerContent .viewerNavBtnLeft {
+    left: 0.833333vw;
+  }
+
+  .viewerContent .viewerNavBtnRight {
+    right: 0.833333vw;
+  }
+
+  .viewerContent .viewerNavIcon {
+    width: 1.25vw;
+    height: 1.25vw;
+  }
+
+  .viewerContent .viewerThumbnailContainer {
+    padding: 0.833333vw;
+  }
+
+  .viewerContent .viewerThumbnailList {
+    gap: 0.416667vw;
+    padding: 0.416667vw;
+  }
+
+  .viewerContent .viewerThumbnailBtn {
+    width: 8.020833vw;
+    height: 5.364583vw;
+    border: 0.052083vw solid transparent;
+  }
+
+  .viewerContent .viewerThumbnailBtnActive {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 0.052083vw #ffffff;
+  }
+
+  .viewerContent .viewerCloseBtn {
+    right: 1.25vw;
+    top: 1.25vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 520.78125vw;
+    border: 0.052083vw solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+  }
+
+  .viewerContent .viewerDiscussBtnWrapper {
+    right: 2vw;
+    bottom: 2vw;
+  }
+
+  .viewerContent .discussProjectBtn {
+    padding: 0.8vw 1.8vw;
+    font-size: 0.833333vw;
+    border-radius: 0.2vw;
+  }
+
+}
+
+@media screen and (max-width: 1580px) {
+
+  /* Dialog Content / Grid / Columns - Fixed Sizes for 1580px */
+  .dialogContent {
+    width: min(94vw, 1196px);
+    border-radius: 2px;
+    padding: 16px;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.32);
+  }
+
+  .dialogContent .dialogGrid {
+    gap: 16px;
+  }
+
+  .dialogContent .leftColumn {
+    width: 750px;
+    gap: 12px;
+  }
+
+  .dialogContent .mainImageWrapper {
+    border-radius: 2px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    width: 750px;
+    height: 422px;
+  }
+
+  .dialogContent .navButtonsContainer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .dialogContent .thumbnailList {
+    gap: 10px;
+    padding: 4px;
+  }
+
+  .dialogContent .thumbnailBtn {
+    height: 60px;
+    width: 116px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+  }
+
+  .dialogContent .thumbnailBtnActive {
+    border: 4px solid #d0b68a !important;
+    box-shadow: 0 0 0 1px rgba(208, 182, 138, 0.35);
+  }
+
+  .dialogContent .rightColumn {
+    gap: 16px;
+    padding: 4px 4px 0 4px;
+    width: 100%;
+  }
+
+  .dialogContent .dialogInfoRow {
+    gap: 16px;
+  }
+
+  .dialogContent .dialogInfoContent {
+    gap: 16px;
+  }
+
+  .dialogContent .dialogTitle {
+    font-size: 20px;
+    margin-bottom: 19px;
+  }
+
+  .dialogContent .dialogFacts {
+    gap: 12px;
+  }
+
+  .dialogContent .factItem {
+    gap: 10px;
+  }
+
+  .dialogContent .factLabel {
+    font-size: 14px;
+  }
+
+  .dialogContent .factValue {
+    font-size: 18px;
+  }
+
+  .dialogContent .dialogDescriptionBlock {
+    gap: 8px;
+  }
+
+  .dialogContent .dialogDescriptionTitle {
+    font-size: 11px;
+  }
+
+  .dialogContent .dialogDescriptionText {
+    font-size: 13px;
+  }
+
+  .dialogContent .dialogActions {
+    gap: 12px;
+    padding-top: 8px;
+  }
+
+  .dialogContent .socialBtnWrapper {
+    gap: 8px;
+  }
+
+  .dialogContent .socialBtn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .dialogContent .dialogSubmitBtn {
+    min-width: 180px;
+    border-radius: 2px;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  .dialogContent .dialogClose {
+    top: 6px !important;
+    right: 6px !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 9999px !important;
+  }
+
+  .dialogContent .socialIconImg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .dialogContent .closeIcon,
+  .dialogContent .closeIconWhite {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .closeIcon svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .title {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    padding: 0 50px !important;
+  }
+
+  .titleProjectMain {
+    font-size: 18px;
+  }
+
+  .cardTitleLabel {
+    font-size: 14px;
+  }
+
+  .cardTitleValue {
+    font-size: 18px;
+  }
+
+  .socialIconImg {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  /* --- DIALOG MOBILE OVERRIDES (Moved to 1280px) --- */
+  .dialogContent .leftColumn {
+    width: 100%;
+  }
+
+  .dialogContent .mainImageWrapper {
+    width: 100%;
+    height: 350px;
+  }
+
+  .dialogContentMobile {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    padding: 44px 0 16px 0 !important;
+    border-radius: 0px !important;
+    border: none !important;
+    margin: 0 !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    background-color: #ffffff !important;
+    z-index: 150 !important;
+  }
+
+  .dialogGridMobile {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    overflow: hidden !important;
+    max-height: none !important;
+  }
+
+  .dialogGridMobile .leftColumn {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+    width: 100% !important;
+  }
+
+  .mainImageMobile {
+    display: none !important;
+  }
+
+  .mobileGalleryContainer {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    gap: 12px !important;
+    width: 100% !important;
+    height: 350px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .mobileGalleryContainer::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .mobileGalleryItem {
+    position: relative !important;
+    flex: 0 0 320px !important;
+    height: 350px !important;
+    scroll-snap-align: start !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+  }
+
+  .mobileGalleryImageBlur {
+    object-fit: cover !important;
+    filter: blur(12px) !important;
+    transform: scale(1.1) !important;
+    opacity: 0.65 !important;
+    user-select: none !important;
+    pointer-events: none !important;
+  }
+
+  .mobileGalleryImageContain {
+    object-fit: contain !important;
+    z-index: 1 !important;
+  }
+
+  .navBtnMobile {
+    display: none !important;
+  }
+
+  .cornerFrame {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 4px !important;
+  }
+
+  .corner {
+    position: absolute !important;
+    width: 6px !important;
+    height: 6px !important;
+    border-color: rgba(161, 132, 90, 0.4) !important;
+    border-style: solid !important;
+    pointer-events: none !important;
+  }
+
+  .topLeft {
+    top: 0 !important;
+    left: 0 !important;
+    border-width: 1px 0 0 1px !important;
+  }
+
+  .topRight {
+    top: 0 !important;
+    right: 0 !important;
+    border-width: 1px 1px 0 0 !important;
+  }
+
+  .bottomLeft {
+    bottom: 0 !important;
+    left: 0 !important;
+    border-width: 0 0 1px 1px !important;
+  }
+
+  .bottomRight {
+    bottom: 0 !important;
+    right: 0 !important;
+    border-width: 0 1px 1px 0 !important;
+  }
+
+  .mobileNavContainer {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: 0px !important;
+    margin-bottom: 4px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .mobileNavArrow {
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    width: 32px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  .mobileNavArrow img {
+    width: 32px !important;
+    height: 32px !important;
+    display: block !important;
+    filter: brightness(0) invert(57%) sepia(19%) saturate(1008%) hue-rotate(12deg) brightness(93%) contrast(87%) !important;
+  }
+
+  .dialogClose {
+    position: absolute !important;
+    top: 16px !important;
+    right: 16px !important;
+    width: 24px !important;
+    height: 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: transparent !important;
+    border: none !important;
+    color: rgba(31, 30, 26, 0.6) !important;
+    z-index: 160 !important;
+  }
+
+  .dialogGridMobile .rightColumn {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .titleMobile {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    color: #1f1e1a !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .factsMobile {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+    margin-top: 0px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .factItem {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+  }
+
+  .factLabel {
+    font-size: 14px !important;
+    color: #999999 !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+  }
+
+  .factValue {
+    font-size: 18px !important;
+    color: #1f1e1a !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+  }
+
+  .descriptionMobile {
+    flex: 1 !important;
+    overflow-y: auto !important;
+    margin-bottom: 8px !important;
+  }
+
+  .descriptionTitleMobile {
+    font-size: 13px !important;
+    color: #999999 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    font-weight: 400 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .descriptionTextMobile {
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+    color: #1f1e1a !important;
+    max-width: 100% !important;
+  }
+
+  .thumbnailBtnMobile {
+    display: none !important;
+  }
+
+  .bottomActionsMobile {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-top: auto !important;
+    gap: 12px !important;
+    padding-top: 8px !important;
+  }
+
+  .socialActionsContainer {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  .socialActionsContainer .cornerFrame {
+    padding: 0 8px !important;
+    height: 44px !important;
+  }
+
+  .socialBtnMobile {
+    width: 44px !important;
+    height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .socialIconImg {
+    width: 24px !important;
+    height: 24px !important;
+    display: block !important;
+  }
+
+  .submitBtnMobile {
+    background-color: #E30613 !important;
+    color: #ffffff !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 4px !important;
+    flex-grow: 1 !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 0 16px !important;
+    transition: background-color 0.2s ease !important;
+    white-space: nowrap !important;
+  }
+
+  .submitBtnMobile:hover {
+    background-color: #8f7453 !important;
+  }
+
+  .viewerContent .viewerDiscussBtnWrapper {
+    right: 24px;
+    bottom: 24px;
+  }
+
+  .viewerContent .discussProjectBtn {
+    padding: 10px 24px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .viewerOverlay {
+    z-index: 200 !important;
+  }
+
+  .viewerContent {
+    z-index: 210 !important;
+  }
+}
+
+/* Height-adaptive overrides for mobile viewports to prevent overflow */
+@media screen and (max-height: 780px) and (max-width: 1280px) {
+  .dialogContentMobile {
+    padding: 32px 0 12px 0 !important;
+  }
+  
+  .mobileGalleryContainer {
+    height: 270px !important;
+  }
+
+  .mobileGalleryItem {
+    flex: 0 0 250px !important;
+    height: 270px !important;
+  }
+
+  .mobileNavContainer {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+  }
+
+  .titleMobile {
+    margin-bottom: 4px !important;
+  }
+
+  .factsMobile {
+    margin-bottom: 6px !important;
+  }
+
+  .descriptionMobile {
+    margin-bottom: 4px !important;
+  }
+}
+
+@media screen and (max-height: 680px) and (max-width: 1280px) {
+  .dialogContentMobile {
+    padding: 24px 0 8px 0 !important;
+  }
+  
+  .mobileGalleryContainer {
+    height: 220px !important;
+  }
+
+  .mobileGalleryItem {
+    flex: 0 0 200px !important;
+    height: 220px !important;
+  }
+
+  .mobileNavContainer {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .titleMobile {
+    margin-bottom: 2px !important;
+  }
+
+  .factsMobile {
+    margin-bottom: 4px !important;
+  }
+
+  .descriptionMobile {
+    margin-bottom: 2px !important;
+  }
+}
+
+/* Breakpoint 664px (Mobile transition - replacing 768px) */
+@media screen and (max-width: 768px) {
+  .section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .container {
+    padding: 0 40px !important;
+  }
+
+  .title {
+    /* display: none !important; */
+    font-size: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .cardProjectList {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cardWrapper {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cardFooter {
+    margin-top: 10px;
+  }
+
+  .cardImageContainer {
+    aspect-ratio: 16 / 9 !important;
+    width: 100% !important;
+  }
+
+  .titleProjectMain {
+    font-size: 18px !important;
+  }
+
+  .mobileArrowIcon {
+    display: block;
+    opacity: 0.3;
+    filter: invert(1);
+    flex-shrink: 0;
+    margin-left: 8px;
+  }
+
+  .viewerMobileList {
+    padding-bottom: 90px !important;
+  }
+}
+
+/* Breakpoint 480px */
+@media screen and (max-width: 480px) {
+  .dialogContentMobile {
+    width: calc(100vw - 32px) !important;
+    height: calc(100dvh - 32px) !important;
+    border-radius: 12px !important;
+  }
+
+  .cardProjectList {
+    gap: 28px;
+  }
+
+  .title {
+    padding-bottom: 23px !important;
+  }
+
+  .container {
+    padding: 0 10px !important;
+  }
+}

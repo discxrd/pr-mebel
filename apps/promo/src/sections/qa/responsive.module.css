@@ -1,0 +1,216 @@
+/* Breakpoints / Responsive styles for QA section */
+
+@media screen and (max-width: 1920px) {
+  .sectionWrapper {
+    padding: 3.125vw 12.5vw !important;
+  }
+
+  .section h2 {
+    font-size: 1.5625vw !important;
+    margin-bottom: 0.260417vw;
+  }
+
+  .processBlock {
+    gap: 1.041667vw;
+  }
+
+  .accordionItem {
+    border-bottom: 0.052083vw solid rgba(31, 30, 26, 0.2);
+  }
+
+  .accordionItem.active {
+    border-bottom: 0.052083vw solid rgba(31, 30, 26, 0.5);
+  }
+
+  .accordionHeader {
+    padding: 1.041667vw 2.083333vw 0.416667vw;
+    gap: 0.833333vw;
+  }
+
+  .titleWrapper {
+    gap: 0.208333vw;
+  }
+
+  .icon {
+    width: 2.083333vw !important;
+    height: 2.083333vw !important;
+  }
+
+  .number {
+    font-size: 1.041667vw !important;
+  }
+
+  .title {
+    max-width: 52.083333vw;
+    font-size: 1.041667vw !important;
+  }
+
+  .accordionContent {
+    padding: 0 1.25vw;
+  }
+
+  .accordionItem.active .accordionContent {
+    padding: 0 0.885417vw 0.729167vw 1.25vw;
+    max-height: 10.416667vw;
+  }
+
+  .accordionContent p {
+    font-size: 0.729167vw !important;
+    padding-left: 2.916667vw;
+    max-width: 51.822917vw;
+  }
+
+  .imagePlaceholder {
+    border: 0.104167vw dashed #e5e5e5;
+  }
+
+  .btnWrapper {
+    padding-top: 1.458333vw;
+  }
+
+  .btnWrapper button {
+    font-size: 0.729167vw;
+    padding: 0.729167vw 2.239583vw;
+    border: 0.052083vw solid #1f1e1a;
+    border-radius: 0.208333vw;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .sectionWrapper {
+    padding: 50px !important;
+  }
+
+
+
+  .accordionContent p {
+    max-width: 995px;
+  }
+
+  .section h2 {
+    font-size: 24px !important;
+  }
+
+  .title,
+  .number {
+    font-size: 18px !important;
+  }
+
+  .title {
+    max-width: 712px;
+    padding-right: 20px;
+
+  }
+
+  .accordionContent p {
+    font-size: 14px !important;
+  }
+
+  .icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .accordionItem.active .accordionContent {
+    max-height: 1000px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionWrapper {
+    padding: 40px !important;
+  }
+
+  .title {
+    max-width: 400px;
+  }
+
+  .section h2 {
+    font-size: 20px !important;
+    margin-bottom: 24px !important;
+    text-align: left !important;
+  }
+
+  .section h2 br {
+    display: none !important;
+  }
+
+  .processBlock {
+    gap: 12px !important;
+    margin-top: 24px !important;
+  }
+
+  .accordionHeader {
+    padding: 16px 0 12px 0 !important;
+  }
+
+  .titleWrapper {
+    /* flex-direction: column !important; */
+    max-width: 500px;
+    align-items: flex-start !important;
+    gap: 4px !important;
+  }
+
+  .title,
+  .number {
+    font-size: 18px !important;
+  }
+
+  .accordionContent {
+    max-width: 600px;
+    padding: 0 !important;
+  }
+
+  .accordionItem.active .accordionContent {
+    padding: 0 0 16px 0 !important;
+    max-height: 500px !important;
+  }
+
+  .accordionContent p {
+    padding-left: 0 !important;
+    font-size: 16px !important;
+    line-height: 130% !important;
+  }
+
+  .icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .btnWrapper {
+    padding-top: 24px !important;
+  }
+
+  .btnWrapper button {
+    width: 100% !important;
+    padding: 14px !important;
+    font-size: 14px !important;
+    background-color: transparent !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sectionWrapper {
+    padding: 40px 10px !important;
+  }
+
+
+
+  .accordionContent p {
+    /* font-size: 14px !important; */
+    padding-bottom: 10px;
+  }
+
+  .icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .sectionWrapper {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

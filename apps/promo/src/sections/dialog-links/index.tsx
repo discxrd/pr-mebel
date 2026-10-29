@@ -1,0 +1,115 @@
+"use client";
+
+import * as React from "react";
+
+import { useMediaQuery } from "@/hooks/use-media-query";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import Image from "next/image";
+import { submitForm } from "@/server";
+import Form from "next/form";
+import { Input } from "@/components/ui/input";
+import { PhoneInput } from "@/components/phone-input";
+import { Button } from "@/components/ui/button";
+import { useMetrika } from "@/hooks/use-metrika";
+import { Checkbox } from "@/components/ui/checkbox";
+import { number } from "@/variables";
+import Link from "next/link";
+
+type DialogFormProps = {
+  children: React.ReactNode;
+};
+
+const WhatsAppIcon = ({ fill = "white" }: { fill?: string }) => (
+  <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M13.3553 1.7334C11.5139 1.73356 9.70242 2.19971 8.08963 3.08842C6.47684 3.97713 5.11515 5.25951 4.13135 6.81616C3.14754 8.37281 2.57363 10.1531 2.46303 11.9913C2.35244 13.8294 2.70876 15.6657 3.49882 17.3291L1.74383 23.8789C1.72984 23.9312 1.72984 23.9862 1.74384 24.0384C1.75784 24.0906 1.78534 24.1383 1.82358 24.1765C1.86182 24.2148 1.90946 24.2422 1.96169 24.2562C2.01393 24.2702 2.06893 24.2702 2.12117 24.2562L8.67085 22.5012C10.1493 23.2039 11.7668 23.565 13.4037 23.5576C15.0406 23.5503 16.6549 23.1748 18.127 22.4589C19.599 21.743 20.8912 20.705 21.9077 19.422C22.9242 18.1389 23.639 16.6435 23.9992 15.0467C24.3594 13.4499 24.3557 11.7924 23.9885 10.1972C23.6212 8.60198 22.8997 7.10982 21.8775 5.83127C20.8553 4.55272 19.5586 3.52053 18.0834 2.81117C16.6081 2.10182 14.9922 1.73346 13.3553 1.7334ZM20.6344 19.924C19.1183 21.4406 17.1666 22.4461 15.0515 22.7998C12.9365 23.1536 10.7638 22.838 8.83676 21.8972C8.76996 21.8646 8.69363 21.8572 8.62182 21.8764L2.47711 23.523L4.12358 17.378C4.14278 17.3062 4.1354 17.2299 4.1028 17.1631C3.03385 14.9737 2.77592 12.4762 3.37486 10.1145C3.9738 7.75285 5.3908 5.68012 7.37393 4.26481C9.35707 2.8495 11.7778 2.18334 14.2058 2.38475C16.6338 2.58616 18.9118 3.6421 20.6346 5.36483C21.5905 6.3208 22.3488 7.45569 22.8662 8.70472C23.3835 9.95375 23.6498 11.2925 23.6498 12.6444C23.6498 13.9963 23.3835 15.335 22.8662 16.5841C22.3488 17.8331 21.5905 18.968 20.6346 19.924H20.6344ZM19.6597 15.4752L17.2445 14.0384C17.0711 13.9331 16.8662 13.8924 16.6657 13.9232C16.4652 13.9541 16.282 14.0547 16.1483 14.2072L15.1289 15.3495C15.0943 15.3905 15.0472 15.4191 14.9948 15.4309C14.9424 15.4427 14.8877 15.4371 14.8388 15.4149C13.0494 14.665 11.6263 13.2419 10.8765 11.4524C10.8543 11.4035 10.8487 11.3487 10.8605 11.2964C10.8723 11.244 10.9008 11.1969 10.9418 11.1623L12.0843 10.143C12.2368 10.0092 12.3374 9.82603 12.3683 9.62552C12.3991 9.42501 12.3584 9.22003 12.2531 9.04661L10.8164 6.63141C10.7367 6.49501 10.621 6.38318 10.482 6.30817C10.343 6.23316 10.186 6.19785 10.0283 6.20614C9.56723 6.22861 9.11247 6.32243 8.68018 6.48424C8.65178 6.4947 8.62508 6.50931 8.60096 6.52759C7.85936 7.08868 7.39635 8.06756 7.22462 9.43707C7.19745 9.6424 7.20372 9.85078 7.24319 10.0541C7.63694 12.1556 8.76379 14.223 10.4162 15.8754C12.0687 17.5279 14.136 18.6548 16.2374 19.0486C16.357 19.0717 16.4785 19.0835 16.6003 19.0838C16.6853 19.0836 16.7702 19.0781 16.8544 19.0673C18.2239 18.8957 19.2027 18.4325 19.7638 17.6909C19.7821 17.6668 19.7967 17.6401 19.8071 17.6117C19.9689 17.1793 20.0627 16.7245 20.0851 16.2634C20.0935 16.1056 20.0583 15.9485 19.9832 15.8095C19.9081 15.6704 19.7962 15.5548 19.6597 15.4752ZM19.2447 17.3545C18.7819 17.938 17.9522 18.3085 16.7775 18.4558C16.6354 18.4749 16.4912 18.4706 16.3506 18.443C12.2685 17.6781 8.61341 14.0229 7.84854 9.94069C7.82092 9.80005 7.81659 9.65583 7.83573 9.51378C7.98303 8.33906 8.3535 7.50924 8.9371 7.04647C9.29662 6.91629 9.67356 6.84055 10.0555 6.82175C10.1019 6.81823 10.1484 6.82811 10.1894 6.85022C10.2303 6.87233 10.2641 6.90574 10.2867 6.94648L11.7234 9.36164C11.7543 9.41252 11.7662 9.47264 11.7571 9.53145C11.7481 9.59026 11.7186 9.644 11.6738 9.68322L10.5316 10.7027C10.3946 10.8228 10.2992 10.9833 10.2591 11.161C10.2191 11.3388 10.2364 11.5247 10.3087 11.6919C11.1207 13.6298 12.6618 15.171 14.5996 15.983C14.7668 16.0553 14.9527 16.0726 15.1305 16.0326C15.3082 15.9925 15.4686 15.8971 15.5887 15.7601L16.608 14.6175C16.6472 14.5727 16.7009 14.5432 16.7597 14.5342C16.8185 14.5251 16.8787 14.5371 16.9295 14.5679L19.3447 16.0048C19.3854 16.0273 19.4189 16.061 19.441 16.102C19.4631 16.143 19.4729 16.1895 19.4694 16.2359C19.4506 16.6179 19.3748 16.9948 19.2445 17.3544L19.2447 17.3545Z"
+      fill={fill}
+    />
+  </svg>
+);
+
+export function DialogLinks({ children }: DialogFormProps) {
+  const [open, setOpen] = React.useState(false);
+  // const isDesktop = useMediaQuery("(min-width: 1024px)");
+
+  // if (isDesktop) {
+  //   return (
+  //     <Dialog open={open} onOpenChange={setOpen}>
+  //       <DialogTrigger asChild>{children}</DialogTrigger>
+  //       <DialogContent className="grid aspect-video w-[900px] max-w-none grid-cols-12 gap-2 border-none p-0">
+
+  //       </DialogContent>
+  //     </Dialog>
+  //   );
+  // }
+  return (
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild>{children}</DialogTrigger>
+      <DialogContent className="grid aspect-video w-[950px] max-w-none grid-cols-12 gap-2 border-none p-0">
+        <div className="relative col-span-5 h-full">
+          <Image
+            src="/qr-block.jpg"
+            alt="img"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="col-span-7 p-10">
+          <DialogHeader className="space-y-3 border-b-[1px] border-dark-300 pb-3">
+            <DialogTitle>
+              Свяжитесь с дизайнером шоурума в удобном мессенджере
+            </DialogTitle>
+            <DialogDescription className="text-base">
+              Наш дизайнер проконсультирует вас, даст рекомендации по проекту и
+              поможет в подборе дизайнерских решений.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex w-full flex-col items-center justify-center gap-2 rounded-xl py-5">
+            <div className="mb-2 flex w-full flex-col items-center justify-center">
+              <p className="">Удобнее с телефона?</p>
+              <p className="">Просканируйте QR</p>
+            </div>
+            <div className="max-w-[200px]">
+              <Image
+                src="/qr-code.png"
+                alt="qr-code"
+                width={200}
+                height={200}
+                className="w-full rounded-xl"
+              />
+            </div>
+            <Link
+              href={`https://wa.me/${number.wa}`}
+              className="mt-5 flex w-full cursor-pointer items-stretch justify-between gap-2 overflow-hidden rounded-sm bg-[#2CB742] pr-5 text-white"
+            >
+              <div className="flex w-[40px] items-center justify-center bg-[#249335]">
+                <div className="logo h-6 w-6">
+                  <WhatsAppIcon />
+                </div>
+              </div>
+
+              <div className="flex w-full items-center justify-center">
+                <strong className="py-2 text-center">WhatsApp</strong>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+}

@@ -1,0 +1,302 @@
+/* Breakpoints / Responsive styles for Catalog section */
+
+@media screen and (max-width: 1920px) {
+  .catalogSectionWrapper {
+    padding: 3.125vw 12.5vw !important;
+  }
+
+  .title {
+    font-size: 1.5625vw;
+    margin-bottom: 1.510417vw;
+  }
+
+  .cardProjectList {
+    gap: 1.041667vw;
+  }
+
+  .cardImage {
+    height: auto;
+    border-radius: 0.15625vw;
+  }
+
+  .cardOverlay {
+    inset: 0 !important;
+    gap: 0.833333vw;
+  }
+
+  .cardOverlay p {
+    max-width: 13.020833vw !important;
+    font-size: 0.9375vw !important;
+  }
+
+  .cardArrow {
+    width: 1.510417vw;
+    height: 0.9375vw;
+  }
+
+  .cardArrowLine {
+    width: 1.458333vw;
+    height: 0.052083vw;
+  }
+
+  .cardArrowTip {
+    width: 0.520833vw;
+    height: 0.520833vw;
+    border-top: 0.052083vw solid #fff;
+    border-right: 0.052083vw solid #fff;
+  }
+
+  .cardFooter {
+    gap: 0.625vw;
+    padding-top: 0.416667vw;
+  }
+
+  .cardFooter span {
+    font-size: 0.677083vw;
+  }
+
+  .titleProjectMain {
+    font-size: 1.041667vw;
+  }
+
+  .titleProject {
+    font-size: 1.25vw;
+  }
+
+  .btnMoreProkect {
+    border: 0.052083vw solid #fff;
+    padding: 0.729167vw 1.979167vw;
+    font-size: 0.833333vw;
+  }
+
+  /* Viewer Overrides */
+  .viewerContent .viewerMobileContainer {
+    padding: 0.833333vw 1.25vw;
+  }
+
+  .viewerContent .viewerMobileList {
+    gap: 0.833333vw;
+    padding-top: 0.833333vw;
+    padding-bottom: 2.5vw;
+  }
+
+  .viewerContent .viewerMobileCloseBtn {
+    right: 1.666667vw;
+    top: 2.5vw;
+    width: 2.5vw !important;
+    height: 2.5vw !important;
+    border-radius: 520.78125vw;
+    border: 0.052083vw solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+  }
+
+  .viewerContent .viewerNavIcon {
+    width: 1.25vw;
+    height: 1.25vw;
+  }
+
+  .viewerContent .viewerDesktopImageArea {
+    padding: 1.25vw;
+  }
+
+  .viewerContent .viewerMainImageBlur {
+    filter: blur(20px);
+  }
+
+  .viewerContent .viewerNavBtn {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 520.78125vw;
+    border: 0.052083vw solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+  }
+
+  .viewerContent .viewerNavBtnLeft {
+    left: 0.833333vw;
+  }
+
+  .viewerContent .viewerNavBtnRight {
+    right: 0.833333vw;
+  }
+
+  .viewerContent .viewerThumbnailContainer {
+    padding: 0.833333vw;
+  }
+
+  .viewerContent .viewerThumbnailList {
+    gap: 0.416667vw;
+    padding: 0.416667vw;
+  }
+
+  .viewerContent .viewerThumbnailBtn {
+    width: 8.020833vw;
+    height: 5.364583vw;
+    border: 0.052083vw solid transparent;
+  }
+
+  .viewerContent .viewerThumbnailBtnActive {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 0.052083vw #ffffff;
+  }
+
+  .viewerContent .viewerThumbnailBlur {
+    filter: blur(8px);
+  }
+
+  .viewerContent .viewerCloseBtn {
+    right: 1.25vw;
+    top: 1.25vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 520.78125vw;
+    border: 0.052083vw solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+  }
+
+  .viewerContent .viewerDiscussBtnWrapper {
+    right: 2vw;
+    bottom: 2vw;
+  }
+
+  .viewerContent .discussProjectBtn {
+    padding: 0.8vw 1.8vw;
+    font-size: 0.833333vw;
+    border-radius: 0.2vw;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  .catalogSectionWrapper {
+    padding: 50px !important;
+  }
+
+  .cardImage {
+    height: auto !important;
+  }
+
+  .titleProjectMain {
+    font-size: 18px;
+  }
+
+  .cardProjectList {
+    gap: 13px 20px;
+  }
+
+  /* .cardProjectList {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  } */
+
+  .viewerContent .viewerDiscussBtnWrapper {
+    right: 24px;
+    bottom: 24px;
+  }
+
+  .viewerContent .discussProjectBtn {
+    padding: 10px 24px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalogSection {
+    padding: 0 !important;
+  }
+
+  .catalogSectionWrapper {
+    padding: 40px !important;
+  }
+
+  .title {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .cardProjectList {
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+  }
+
+  .cardWrapper {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .cardImageContainer {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .cardFooter {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    padding-top: 12px !important;
+  }
+
+  .cardFooterText {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .mobileDescription {
+    display: block !important;
+    font-size: 16px !important;
+    color: rgba(31, 30, 26, 1) !important;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+  }
+
+  .titleProjectMain {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: rgba(31, 30, 26, 1) !important;
+  }
+
+  .mobileArrowIcon {
+    display: block !important;
+    opacity: 0.3 !important;
+    filter: invert(1) !important;
+    flex-shrink: 0 !important;
+    margin-left: 8px !important;
+  }
+
+  .cardOverlay {
+    display: none !important;
+  }
+
+  .cardImage::after {
+    display: none !important;
+  }
+
+  .viewerMobileList {
+    padding-bottom: 90px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .catalogSectionWrapper {
+    padding: 40px 10px !important;
+  }
+
+  .cardProjectList {
+    gap: 30px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .catalogSectionWrapper {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

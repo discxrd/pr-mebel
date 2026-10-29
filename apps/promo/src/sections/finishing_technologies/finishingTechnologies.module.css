@@ -1,0 +1,129 @@
+.section {
+  margin: 0 auto;
+  padding: 3.125vw 17.578125vw;
+}
+
+.section h2 {
+
+  font-weight: 400;
+
+  font-size: 1.328125vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  color: #E30613;
+  margin-bottom: 0.390625vw;
+}
+
+.section h2 span {
+  color: rgba(31, 30, 26, 1);
+}
+
+.section p {
+
+  font-weight: 400;
+
+  font-size: 0.703125vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(31, 30, 26, 1);
+
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.625vw;
+  margin-top: 1.4453125vw;
+}
+
+.card {
+  padding: 0.78125vw 0.859375vw;
+  /* border: 0.0390625vw solid #e5e5e5; */
+  background-color: #fff;
+  transition: all 0.3s ease;
+  height: auto;
+  min-height: 10.546875vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 0.15625vw;
+}
+
+.card:nth-child(1) {
+  background-image: url("../../../public/finishing_technologies/4.\ Эксклюзивные\ органайзеры\ 2.png");
+  background-size: cover;
+}
+
+.card:nth-child(2) {
+  background-image: url("../../../public/finishing_technologies/4.\ Эксклюзивные\ органайзеры\ 2 (1).png");
+  background-size: cover;
+}
+
+.card:nth-child(3) {
+  background-image: url("../../../public/finishing_technologies/4. Эксклюзивные органайзеры 10.png");
+  background-size: cover;
+}
+
+.card:nth-child(4) {
+  background-image: url("../../../public/finishing_technologies/4. Эксклюзивные органайзеры 9.png");
+  background-size: cover;
+}
+
+.card:nth-child(5) {
+  background-image: url("../../../public/finishing_technologies/Rectangle 2085655927.png");
+  background-size: cover;
+}
+
+.card:hover {
+  box-shadow: 0 0.15625vw 0.46875vw rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 0.46875vw 0;
+
+  font-weight: 400;
+
+  font-size: 0.9375vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.card p {
+  max-width: 12.1484375vw;
+  width: 100%;
+
+  font-weight: 400;
+
+  font-size: 0.625vw;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.cardLarge {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cardLarge h3 {
+  padding-bottom: 0.1953125vw;
+  /* border-bottom: 0.0390625vw solid #e5e5e5; */
+  max-width: 5.625vw;
+  width: 100%;
+  color: white;
+}
